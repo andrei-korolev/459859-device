@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Андрей Королёв](https://up.htmlacademy.ru/htmlcss/23/user/459859).
-* Наставник: `[Станислав Кузнецов](https://htmlacademy.ru/profile/id237925)`.
+* Наставник: [Станислав Кузнецов](https://htmlacademy.ru/profile/id237925).
 
 ---
 
