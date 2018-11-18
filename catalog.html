@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Интернет магазин Девайс</title>
+  <title>Каталог</title>
 </head>
 <body>
   <header class="header">
@@ -50,23 +50,70 @@
     </div>
   </header>
   <main class="main">
-    <h1 class="main__title hidden">Магазин - Девайс</h1>
-    <section class="main__about">
-      <h2 class="main__about-title">О нас</h2>
-      <p class="main__about-text">Огромный выбор гаджетов не оставит равношным гика, который есть в каждом из нас.</p>
-      <p class="main__about-text">Мы можме доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-      <ul class="main__about-company-list">
-        <li class="main__about-company-item">Деловые Линии</li>
-        <li class="main__about-company-item">Автотрейдинг</li>
-        <li class="main__about-company-item">ЖелДорЭкспедиция</li>
-      </ul>
-      <a href="" class="main__about-link">Подробнее о нас</a>
+    <h1 class="main__title">Моноподы для селфи</h1>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a href="" class="breadcrumbs__link">Главная</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="" class="breadcrumbs__link">Каталог товаров</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a href="" class="breadcrumbs__link">Моноподы для селфи</a>
+      </li>
+    </ul>
+    <section class="main__filters">
+      <h2 class="hidden">Фильтор товаров</h2>
+      <div class="filter">
+        <span class="filter__title">Цвет</span>
+        <ul class="filter__list">
+          <li class="filter__item">Чёрный</li>
+          <li class="filter__item">Белый</li>
+          <li class="filter__item">Синий</li>
+          <li class="filter__item">Красный</li>
+          <li class="filter__item">Розовый</li>
+        </ul>
+      </div>
+      <div class="filter">
+        <span class="filter__title">Bluetooth</span>
+        <ul class="filter__list">
+          <li class="filter__item">Есть</li>
+          <li class="filter__item">Нет</li>
+        </ul>
+      </div>
+      <button class="main__filters-button">Показать</button>
     </section>
-    <section class="main__contact">
-      <h2 class="main__contact-title">Контакты</h2>
-      <p class="main__contact-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособоность покупки. Всякое бывает.</p>
-      <div class="main__contact-map"></div>
-      <a href="" class="main__contact-link">Напишите нам</a>
+    <section class="catalog">
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <img src="https://picsum.photos/360/380" width="360" height="380" alt="Любительская селфи-палка" class="catalog__item-image">
+          <p class="catalog__item-description">
+            <a href="" class="catalog__item-title">Любительская селфи-палка</a>
+            <span class="catalog__item-price">500 руб.</span>
+          </p>
+        </li>
+        <li class="catalog__item">
+          <img src="https://picsum.photos/360/380" alt="Профессиональная селфи-палка" class="catalog__item-image">
+          <p class="catalog__item-description">
+            <a href="" class="catalog__item-title">Профессиональная селфи-палка</a>
+            <span class="catalog__item-price">1500 руб.</span>
+          </p>
+        </li>
+        <li class="catalog__item">
+          <img src="https://picsum.photos/360/380" alt="Непотопляемая селфи-палка" class="catalog__item-image">
+          <p class="catalog__item-description">
+            <a href="" class="catalog__item-title">Непотопляемая селфи-палка</a>
+            <span class="catalog__item-price">2500 руб.</span>
+          </p>
+        </li>
+        <li class="catalog__item">
+          <img src="https://picsum.photos/360/380" alt="Селфи-палка 'Следуй за мной'" class="catalog__item-image">
+          <p class="catalog__item-description">
+            <a href="" class="catalog__item-title">Селфи-палка 'Следуй за мной'</a>
+            <span class="catalog__item-price">4900 руб.</span>
+          </p>
+        </li>
+      </ul>
     </section>
   </main>
   <footer class="footer">
