@@ -6,7 +6,7 @@
 </head>
 <body>
   <header class="header">
-    <a href="index.html" class="logotype">
+    <a href="index.html" class="logotype" aria-label="Ссылка на главную страницу компании">
       <img src="images/logotype.svg" width="163" height="36" alt="Логотип компании" class="logotype__image">
     </a>
     <div class="header__line">
@@ -16,7 +16,7 @@
           <span class="user-info__personal-name"></span>
           <ul class="user-info__personal-menu">
             <li class="user-info__personal-menu-item">
-              <button class="user-info__personal-menu-button">Выйти</button>
+              <button type="button" class="user-info__personal-menu-button">Выйти</button>
             </li>
           </ul>
         </div>
@@ -50,7 +50,7 @@
     </div>
   </header>
   <main class="main">
-    <h1 class="main__title hidden">Магазин - Девайс</h1>
+    <h1 class="main__title visually-hidden">Магазин - Девайс</h1>
     <section class="main__about">
       <h2 class="main__about-title">О нас</h2>
       <p class="main__about-text">Огромный выбор гаджетов не оставит равношным гика, который есть в каждом из нас.</p>
@@ -71,7 +71,7 @@
   </main>
   <footer class="footer">
     <div class="footer__top">
-      <a href="index.html" class="logotype">
+      <a href="index.html" class="logotype" aria-label="Ссылка на главную страницу компании">
         <img src="images/logotype.svg" width="163" height="36" alt="Логотип компании" class="logotype__image">
       </a>
       <div class="user-info">
@@ -79,7 +79,7 @@
           <span class="user-info__personal-name"></span>
           <ul class="user-info__personal-menu">
             <li class="user-info__personal-menu-item">
-              <button class="user-info__personal-menu-button">Выйти</button>
+              <button type="button" class="user-info__personal-menu-button">Выйти</button>
             </li>
           </ul>
         </div>
@@ -111,17 +111,57 @@
     <div class="footer__bottom">
       <ul class="social-network">
         <li class="social-network__item">
-          <a href="#" class="social-network__button">facebook</a>
+          <a href="#" class="social-network__button" aria-label="Магазин Device в facebook"></a>
         </li>
         <li class="social-network__item">
-          <a href="#" class="social-network__button">insta</a>
+          <a href="#" class="social-network__button" aria-label="Магазин Device в instagram"></a>
         </li>
         <li class="social-network__item">
-          <a href="#" class="social-network__button">twitter</a>
+          <a href="#" class="social-network__button" aria-label="Магазин Device в twitter"></a>
         </li>
       </ul>
-      <img src="images/icons/htmlacademy.svg" width="26" height="34" class="footer__bottom-developer">
+      <a href="https://htmlacademy.ru" aria-label="Ссылка на разработчика сайта">
+        <img src="images/icons/htmlacademy.svg" width="26" height="34" class="footer__bottom-developer">
+      </a>
     </div>
   </footer>
+
+  <div class="popup">
+    <button type="button" class="popup__close" type="button" aria-label="Закрыть карту"></button>
+    <div class="popup__content">
+      <div class="full-map"></div>
+    </div>
+  </div>
+
+  <div class="popup">
+    <button type="button" class="popup__close" type="button" aria-label="Закрыть форму отправки письма"></button>
+    <div class="popup__content">
+      <form class="form-feedback">
+        <div class="form-feedback__line">
+          <div class="form-feedback__column">
+            <label class="text-field">
+              <span class="text-field__label">Ваше имя:</span>
+              <input type="text" class="text-field__input input" name="name" placeholder="Имя Фамилия">
+            </label>
+          </div>
+          <div class="form-feedback__column">
+            <label class="text-field">
+              <span class="text-field__label">Ваш e-mail:</span>
+              <input type="text" class="text-field__input input" name="email" placeholder="email@example.com">
+            </label>
+          </div>
+        </div>
+        <div class="form-feedback__line">
+          <div class="form-feedback__column">
+            <label class="text-field">
+              <span class="text-field__label">Текст письма:</span>
+              <textarea name="letter" class="text-field__input textarea" placeholder="В свободной форме"></textarea>
+            </label>
+          </div>
+        </div>
+        <button type="button" class="form-feedback__submit" aria-label="Отправить письмо">Отправить</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>

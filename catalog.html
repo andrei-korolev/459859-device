@@ -6,7 +6,7 @@
 </head>
 <body>
   <header class="header">
-    <a href="index.html" class="logotype">
+    <a href="index.html" class="logotype" aria-label="Ссылка на главную страницу компании">
       <img src="images/logotype.svg" width="163" height="36" alt="Логотип компании" class="logotype__image">
     </a>
     <div class="header__line">
@@ -16,7 +16,7 @@
           <span class="user-info__personal-name"></span>
           <ul class="user-info__personal-menu">
             <li class="user-info__personal-menu-item">
-              <button class="user-info__personal-menu-button">Выйти</button>
+              <button type="button" class="user-info__personal-menu-button">Выйти</button>
             </li>
           </ul>
         </div>
@@ -47,41 +47,108 @@
           </li>
         </ul>
       </nav>
+      <nav class="header__subnavigation">
+        <ul class="header__subnavigation-list">
+          <li class="header__subnavigation-item">
+            <a href="#" class="header__subnavigation-link">Виртуальная реальность</a>
+          </li>
+          <li class="header__subnavigation-item">
+            <a href="#" class="header__subnavigation-link">Моноподы для селфи</a>
+          </li>
+          <li class="header__subnavigation-item">
+            <a href="#" class="header__subnavigation-link">Экшн-камеры</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="header__subnavigation">
+        <ul class="header__subnavigation-list">
+          <li class="header__subnavigation-item">
+            <a href="#" class="header__subnavigation-link">Фитнес-браслеты</a>
+          </li>
+          <li class="header__subnavigation-item">
+            <a href="#" class="header__subnavigation-link">Умные часы</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="header__subnavigation">
+        <ul class="header__subnavigation-list">
+          <li class="header__subnavigation-item">
+            <a href="#" class="header__subnavigation-link">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main class="main">
     <h1 class="main__title">Моноподы для селфи</h1>
     <ul class="breadcrumbs">
       <li class="breadcrumbs__item">
-        <a href="#" class="breadcrumbs__link">Главная</a>
+        <a href="index.html" class="breadcrumbs__link">Главная</a>
       </li>
       <li class="breadcrumbs__item">
-        <a href="#" class="breadcrumbs__link">Каталог товаров</a>
+        <a href="catalog.html" class="breadcrumbs__link">Каталог товаров</a>
       </li>
       <li class="breadcrumbs__item">
         <a href="#" class="breadcrumbs__link">Моноподы для селфи</a>
       </li>
     </ul>
     <section class="main__filters">
-      <h2 class="hidden">Фильтор товаров</h2>
-      <div class="filter">
-        <span class="filter__title">Цвет</span>
-        <ul class="filter__list">
-          <li class="filter__item">Чёрный</li>
-          <li class="filter__item">Белый</li>
-          <li class="filter__item">Синий</li>
-          <li class="filter__item">Красный</li>
-          <li class="filter__item">Розовый</li>
-        </ul>
-      </div>
-      <div class="filter">
-        <span class="filter__title">Bluetooth</span>
-        <ul class="filter__list">
-          <li class="filter__item">Есть</li>
-          <li class="filter__item">Нет</li>
-        </ul>
-      </div>
-      <button class="main__filters-button">Показать</button>
+      <h2 class="visually-hidden">Фильтор товаров</h2>
+      <form class="filter">
+        <fieldset class="filter__group">
+          <legend class="filter__title">Цвет</legend>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <label class="text-field">
+                <span class="text-field__label">Чёрный</span>
+                <input type="checkbox" class="text-field__checkbox checkbox" name="color-black">
+              </label>
+            </li>
+            <li class="filter__item">
+              <label class="text-field">
+                <span class="text-field__label">Белый</span>
+                <input type="checkbox" class="text-field__checkbox checkbox" name="color-white">
+              </label>
+            </li>
+            <li class="filter__item">
+              <label class="text-field">
+                <span class="text-field__label">Синий</span>
+                <input type="checkbox" class="text-field__checkbox checkbox" name="color-blue">
+              </label>
+            </li>
+            <li class="filter__item">
+              <label class="text-field">
+                <span class="text-field__label">Красный</span>
+                <input type="checkbox" class="text-field__checkbox checkbox" name="color-red">
+              </label>
+            </li>
+            <li class="filter__item">
+              <label class="text-field">
+                <span class="text-field__label">Розовый</span>
+                <input type="checkbox" class="text-field__checkbox checkbox" name="color-pink">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter__group">
+          <legend class="filter__title">Bluetooth</legend>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <label class="text-field">
+                <span class="text-field__label">Есть</span>
+                <input type="checkbox" class="text-field__checkbox checkbox" name="bluetooth-on">
+              </label>
+            </li>
+            <li class="filter__item">
+              <label class="text-field">
+                <span class="text-field__label">Нет</span>
+                <input type="checkbox" class="text-field__checkbox checkbox" name="bluetooth-off">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+      <button type="button" class="main__filters-button">Показать</button>
     </section>
     <section class="catalog">
       <ul class="catalog__list">
@@ -118,7 +185,7 @@
   </main>
   <footer class="footer">
     <div class="footer__top">
-      <a href="index.html" class="logotype">
+      <a href="index.html" class="logotype" aria-label="Ссылка на главную страницу компании">
         <img src="images/logotype.svg" width="163" height="36" alt="Логотип компании" class="logotype__image">
       </a>
       <div class="user-info">
@@ -126,7 +193,7 @@
           <span class="user-info__personal-name"></span>
           <ul class="user-info__personal-menu">
             <li class="user-info__personal-menu-item">
-              <button class="user-info__personal-menu-button">Выйти</button>
+              <button type="button" class="user-info__personal-menu-button">Выйти</button>
             </li>
           </ul>
         </div>
@@ -158,16 +225,18 @@
     <div class="footer__bottom">
       <ul class="social-network">
         <li class="social-network__item">
-          <a href="#" class="social-network__button">facebook</a>
+          <a href="#" class="social-network__button" aria-label="Магазин Device в facebook"></a>
         </li>
         <li class="social-network__item">
-          <a href="#" class="social-network__button">insta</a>
+          <a href="#" class="social-network__button" aria-label="Магазин Device в instagram"></a>
         </li>
         <li class="social-network__item">
-          <a href="#" class="social-network__button">twitter</a>
+          <a href="#" class="social-network__button" aria-label="Магазин Device в twitter"></a>
         </li>
       </ul>
-      <img src="images/icons/htmlacademy.svg" width="26" height="34" class="footer__bottom-developer">
+      <a href="https://htmlacademy.ru" aria-label="Ссылка на разработчика сайта">
+        <img src="images/icons/htmlacademy.svg" width="26" height="34" class="footer__bottom-developer">
+      </a>
     </div>
   </footer>
 </body>
