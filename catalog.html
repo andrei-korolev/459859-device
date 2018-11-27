@@ -94,7 +94,7 @@
     </ul>
     <section class="main__filters">
       <h2 class="visually-hidden">Фильтор товаров</h2>
-      <form class="filter">
+      <form method="post" action="https://echo.htmlacademy.ru" class="filter">
         <fieldset class="filter__group">
           <legend class="filter__title">Цвет</legend>
           <ul class="filter__list">
@@ -136,19 +136,19 @@
             <li class="filter__item">
               <label class="text-field">
                 <span class="text-field__label">Есть</span>
-                <input type="checkbox" class="text-field__checkbox checkbox" name="bluetooth-on">
+                <input type="radio" class="text-field__checkbox checkbox" name="bluetooth">
               </label>
             </li>
             <li class="filter__item">
               <label class="text-field">
                 <span class="text-field__label">Нет</span>
-                <input type="checkbox" class="text-field__checkbox checkbox" name="bluetooth-off">
+                <input type="radio" class="text-field__checkbox checkbox" name="bluetooth">
               </label>
             </li>
           </ul>
         </fieldset>
+        <button class="main__filters-button">Показать</button>
       </form>
-      <button type="button" class="main__filters-button">Показать</button>
     </section>
     <section class="catalog">
       <ul class="catalog__list">
