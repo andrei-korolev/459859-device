@@ -29,7 +29,6 @@ ol {
 }
 
 body {
-  margin: 0;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -41,7 +40,7 @@ body {
 .wrapper {
   width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px 0;
+  padding: 0 20px;
 }
 
 .button {
@@ -72,8 +71,11 @@ body {
 }
 
 .header {
-  padding: 0 60px 40px;
   background-color: rgba(240, 197, 46, 0.5);
+}
+
+.header__inner {
+  padding: 40px 60px;
 }
 
 .header__logotype {
@@ -202,7 +204,7 @@ body {
 }
 
 .header__subnavigation-item + .header__subnavigation-item {
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
 .footer__bottom-developer:hover,
@@ -266,7 +268,6 @@ body {
   align-items: center;
   font-size: 15px;
   line-height: 38px;
-  letter-spacing: -0.5px;
 }
 
 .user-info__menu-item._margin {
@@ -282,17 +283,17 @@ body {
 }
 
 .user-info__menu-link._user {
-  padding-left: 27px;
+  padding-left: 26px;
   background-image: url('../images/icons/user.svg');
 }
 
 .user-info__menu-link._compare {
-  padding-left: 24px;
+  padding-left: 21px;
   background-image: url('../images/icons/compare.svg');
 }
 
 .user-info__menu-link._cart {
-  padding-left: 26px;
+  padding-left: 23px;
   background-image: url('../images/icons/cart.svg');
 }
 

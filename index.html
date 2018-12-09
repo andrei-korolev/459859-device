@@ -6,78 +6,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Интернет магазин Девайс</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="header__logotype">
-        <a class="logotype" aria-label="Ссылка на главную страницу компании">DEVICE</a>
-      </div>
-      <div class="header__line">
-        <div class="header__search">
-          <p class="search">
-            <input type="text" name="search" placeholder="Поиск по сайту" class="search__input" aria-label="Поиск по сайту">
-            <button type="button" class="search__button">Найти</button>
-          </p>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__inner">
+        <div class="header__logotype">
+          <a class="logotype" aria-label="Ссылка на главную страницу магазина DEVICE">DEVICE</a>
         </div>
-        <div class="header__user-info user-info">
-          <ul class="user-info__menu">
-            <li class="user-info__menu-item _margin">
-              <a href="#" class="user-info__menu-link _user">Выйти</a>
+        <div class="header__line">
+          <div class="header__search">
+            <p class="search">
+              <input type="text" name="search" placeholder="Поиск по сайту" class="search__input" aria-label="Поиск по сайту">
+              <button type="button" class="search__button">Найти</button>
+            </p>
+          </div>
+          <div class="header__user-info user-info">
+            <ul class="user-info__menu">
+              <li class="user-info__menu-item _margin">
+                <a href="#" class="user-info__menu-link _user">Выйти</a>
+              </li>
+              <li class="user-info__menu-item">
+                <a href="#" class="user-info__menu-link _compare">Сравнить</a>
+              </li>
+              <li class="user-info__menu-item">
+                <a href="#" class="user-info__menu-link _cart">Корзина</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__line">
+          <nav class="header__navigation">
+            <ul class="header__navigation-list">
+              <li class="header__navigation-item">
+                <a href="catalog.html" class="header__navigation-link _icon-plus">Каталог товаров</a>
+              </li>
+              <li class="header__navigation-item">
+                <a href="#" class="header__navigation-link">Доставка</a>
+              </li>
+              <li class="header__navigation-item">
+                <a href="#" class="header__navigation-link">Гарантия</a>
+              </li>
+              <li class="header__navigation-item">
+                <a href="#" class="header__navigation-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <nav class="header__line _subnavigation">
+          <ul class="header__subnavigation">
+            <li class="header__subnavigation-item">
+              <a href="#" class="header__subnavigation-link">Виртуальная реальность</a>
             </li>
-            <li class="user-info__menu-item">
-              <a href="#" class="user-info__menu-link _compare">Сравнить</a>
+            <li class="header__subnavigation-item">
+              <a href="#" class="header__subnavigation-link">Моноподы для селфи</a></li>
+            <li class="header__subnavigation-item">
+              <a href="#" class="header__subnavigation-link">Экшн-камеры</a></li>
+          </ul>
+          <ul class="header__subnavigation">
+            <li class="header__subnavigation-item">
+              <a href="#" class="header__subnavigation-link">Фитнес-браслеты</a>
             </li>
-            <li class="user-info__menu-item">
-              <a href="#" class="user-info__menu-link _cart">Корзина</a>
+            <li class="header__subnavigation-item">
+              <a href="#" class="header__subnavigation-link">Умные часы</a>
             </li>
           </ul>
-        </div>
-      </div>
-      <div class="header__line">
-        <nav class="header__navigation">
-          <ul class="header__navigation-list">
-            <li class="header__navigation-item">
-              <a href="catalog.html" class="header__navigation-link _icon-plus">Каталог товаров</a>
-            </li>
-            <li class="header__navigation-item">
-              <a href="#" class="header__navigation-link">Доставка</a>
-            </li>
-            <li class="header__navigation-item">
-              <a href="#" class="header__navigation-link">Гарантия</a>
-            </li>
-            <li class="header__navigation-item">
-              <a href="#" class="header__navigation-link">Контакты</a>
+          <ul class="header__subnavigation">
+            <li class="header__subnavigation-item">
+              <a href="#" class="header__subnavigation-link">Квадрокоптеры</a>
             </li>
           </ul>
         </nav>
       </div>
-      <nav class="header__line _subnavigation">
-        <ul class="header__subnavigation">
-          <li class="header__subnavigation-item">
-            <a href="#" class="header__subnavigation-link">Виртуальная реальность</a>
-          </li>
-          <li class="header__subnavigation-item">
-            <a href="#" class="header__subnavigation-link">Моноподы для селфи</a></li>
-          <li class="header__subnavigation-item">
-            <a href="#" class="header__subnavigation-link">Экшн-камеры</a></li>
-        </ul>
-        <ul class="header__subnavigation">
-          <li class="header__subnavigation-item">
-            <a href="#" class="header__subnavigation-link">Фитнес-браслеты</a>
-          </li>
-          <li class="header__subnavigation-item">
-            <a href="#" class="header__subnavigation-link">Умные часы</a>
-          </li>
-        </ul>
-        <ul class="header__subnavigation">
-          <li class="header__subnavigation-item">
-            <a href="#" class="header__subnavigation-link">Квадрокоптеры</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    </div>
+  </header>
+  <div class="wrapper">
     <main class="main">
       <h1 class="main__title visually-hidden">Магазин - Девайс</h1>
       <section class="main__about">
@@ -100,9 +105,9 @@
     </main>
     <footer class="footer">
       <div class="footer__top">
-        <a href="index.html" class="logotype" aria-label="Ссылка на главную страницу компании">
-          <img src="images/logotype.svg" width="163" height="36" alt="Логотип компании" class="logotype__image">
-        </a>
+        <div class="footer__logotype">
+          <a class="logotype" aria-label="Ссылка на главную страницу магазина DEVICE">DEVICE</a>
+        </div>
         <div class="user-info _light">
           <ul class="user-info__menu">
             <li class="user-info__menu-item">
