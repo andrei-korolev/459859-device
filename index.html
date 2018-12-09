@@ -2,121 +2,154 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Интернет магазин Девайс</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <header class="header">
-    <a href="index.html" class="logotype" aria-label="Ссылка на главную страницу компании">
-      <img src="images/logotype.svg" width="163" height="36" alt="Логотип компании" class="logotype__image">
-    </a>
-    <div class="header__line">
-      <div class="header__search">Поиск по сайту</div>
-      <div class="user-info">
-        <ul class="user-info__menu">
-          <li class="user-info__menu-item">
-            <a href="#" class="user-info__menu-link">Выйти</a>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__logotype">
+        <a class="logotype" aria-label="Ссылка на главную страницу компании">DEVICE</a>
+      </div>
+      <div class="header__line">
+        <div class="header__search">
+          <p class="search">
+            <input type="text" name="search" placeholder="Поиск по сайту" class="search__input" aria-label="Поиск по сайту">
+            <button type="button" class="search__button">Найти</button>
+          </p>
+        </div>
+        <div class="header__user-info user-info">
+          <ul class="user-info__menu">
+            <li class="user-info__menu-item _margin">
+              <a href="#" class="user-info__menu-link _user">Выйти</a>
+            </li>
+            <li class="user-info__menu-item">
+              <a href="#" class="user-info__menu-link _compare">Сравнить</a>
+            </li>
+            <li class="user-info__menu-item">
+              <a href="#" class="user-info__menu-link _cart">Корзина</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__line">
+        <nav class="header__navigation">
+          <ul class="header__navigation-list">
+            <li class="header__navigation-item">
+              <a href="catalog.html" class="header__navigation-link _icon-plus">Каталог товаров</a>
+            </li>
+            <li class="header__navigation-item">
+              <a href="#" class="header__navigation-link">Доставка</a>
+            </li>
+            <li class="header__navigation-item">
+              <a href="#" class="header__navigation-link">Гарантия</a>
+            </li>
+            <li class="header__navigation-item">
+              <a href="#" class="header__navigation-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <nav class="header__line _subnavigation">
+        <ul class="header__subnavigation">
+          <li class="header__subnavigation-item">
+            <a href="#" class="header__subnavigation-link">Виртуальная реальность</a>
           </li>
-          <li class="user-info__menu-item">
-            <a href="#" class="user-info__menu-link">Сравнить</a>
+          <li class="header__subnavigation-item">
+            <a href="#" class="header__subnavigation-link">Моноподы для селфи</a></li>
+          <li class="header__subnavigation-item">
+            <a href="#" class="header__subnavigation-link">Экшн-камеры</a></li>
+        </ul>
+        <ul class="header__subnavigation">
+          <li class="header__subnavigation-item">
+            <a href="#" class="header__subnavigation-link">Фитнес-браслеты</a>
           </li>
-          <li class="user-info__menu-item">
-            <a href="#" class="user-info__menu-link">Корзина</a>
+          <li class="header__subnavigation-item">
+            <a href="#" class="header__subnavigation-link">Умные часы</a>
           </li>
         </ul>
-      </div>
-    </div>
-    <div class="header__line">
-      <nav class="header__navigation">
-        <ul class="header__navigation-list">
-          <li class="header__navigation-item">
-            <a href="catalog.html" class="header__navigation-link">Каталог товаров</a>
-          </li>
-          <li class="header__navigation-item">
-            <a href="#" class="header__navigation-link">Доставка</a>
-          </li>
-          <li class="header__navigation-item">
-            <a href="#" class="header__navigation-link">Гарантия</a>
-          </li>
-          <li class="header__navigation-item">
-            <a href="#" class="header__navigation-link">Контакты</a>
+        <ul class="header__subnavigation">
+          <li class="header__subnavigation-item">
+            <a href="#" class="header__subnavigation-link">Квадрокоптеры</a>
           </li>
         </ul>
       </nav>
-    </div>
-  </header>
-  <main class="main">
-    <h1 class="main__title visually-hidden">Магазин - Девайс</h1>
-    <section class="main__about">
-      <h2 class="main__about-title">О нас</h2>
-      <p class="main__about-text">Огромный выбор гаджетов не оставит равношным гика, который есть в каждом из нас.</p>
-      <p class="main__about-text">Мы можме доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-      <ul class="main__about-company-list">
-        <li class="main__about-company-item">Деловые Линии</li>
-        <li class="main__about-company-item">Автотрейдинг</li>
-        <li class="main__about-company-item">ЖелДорЭкспедиция</li>
-      </ul>
-      <a href="#" class="button main__about-link">Подробнее о нас</a>
-    </section>
-    <section class="main__contact">
-      <h2 class="main__contact-title">Контакты</h2>
-      <p class="main__contact-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособоность покупки. Всякое бывает.</p>
-      <img src="images/map.jpg" width="560" height="222" alt="Карта" class="main__contact-map">
-      <a href="#" class="button main__contact-link">Напишите нам</a>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__top">
-      <a href="index.html" class="logotype" aria-label="Ссылка на главную страницу компании">
-        <img src="images/logotype.svg" width="163" height="36" alt="Логотип компании" class="logotype__image">
-      </a>
-      <div class="user-info _light">
-        <ul class="user-info__menu">
-          <li class="user-info__menu-item">
-            <a href="#" class="user-info__menu-link">Выйти</a>
+    </header>
+    <main class="main">
+      <h1 class="main__title visually-hidden">Магазин - Девайс</h1>
+      <section class="main__about">
+        <h2 class="main__about-title">О нас</h2>
+        <p class="main__about-text">Огромный выбор гаджетов не оставит равношным гика, который есть в каждом из нас.</p>
+        <p class="main__about-text">Мы можме доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <ul class="main__about-company-list">
+          <li class="main__about-company-item">Деловые Линии</li>
+          <li class="main__about-company-item">Автотрейдинг</li>
+          <li class="main__about-company-item">ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="#" class="button main__about-link">Подробнее о нас</a>
+      </section>
+      <section class="main__contact">
+        <h2 class="main__contact-title">Контакты</h2>
+        <p class="main__contact-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособоность покупки. Всякое бывает.</p>
+        <img src="images/map.jpg" width="560" height="222" alt="Карта" class="main__contact-map">
+        <a href="#" class="button main__contact-link">Напишите нам</a>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <a href="index.html" class="logotype" aria-label="Ссылка на главную страницу компании">
+          <img src="images/logotype.svg" width="163" height="36" alt="Логотип компании" class="logotype__image">
+        </a>
+        <div class="user-info _light">
+          <ul class="user-info__menu">
+            <li class="user-info__menu-item">
+              <a href="#" class="user-info__menu-link">Выйти</a>
+            </li>
+            <li class="user-info__menu-item">
+              <a href="#" class="user-info__menu-link">Сравнить</a>
+            </li>
+            <li class="user-info__menu-item">
+              <a href="#" class="user-info__menu-link">Корзина</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__main">
+        <div class="footer__address">г. Москва, ул. Строителей, 15</div>
+        <ul class="footer__navigation">
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">Доставка</a>
           </li>
-          <li class="user-info__menu-item">
-            <a href="#" class="user-info__menu-link">Сравнить</a>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">Гарантия</a>
           </li>
-          <li class="user-info__menu-item">
-            <a href="#" class="user-info__menu-link">Корзина</a>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">Контакты</a>
           </li>
         </ul>
+        <p class="footer__phone">Тел.: +7 (495) 495-95-95</p>
       </div>
-    </div>
-    <div class="footer__main">
-      <div class="footer__address">г. Москва, ул. Строителей, 15</div>
-      <ul class="footer__navigation">
-        <li class="footer__navigation-item">
-          <a href="#" class="footer__navigation-link">Доставка</a>
-        </li>
-        <li class="footer__navigation-item">
-          <a href="#" class="footer__navigation-link">Гарантия</a>
-        </li>
-        <li class="footer__navigation-item">
-          <a href="#" class="footer__navigation-link">Контакты</a>
-        </li>
-      </ul>
-      <p class="footer__phone">Тел.: +7 (495) 495-95-95</p>
-    </div>
-    <div class="footer__bottom">
-      <ul class="social-network">
-        <li class="social-network__item">
-          <a href="#" class="social-network__button _facebook" aria-label="Магазин Device в facebook"></a>
-        </li>
-        <li class="social-network__item">
-          <a href="#" class="social-network__button _instagram" aria-label="Магазин Device в instagram"></a>
-        </li>
-        <li class="social-network__item">
-          <a href="#" class="social-network__button _twitter" aria-label="Магазин Device в twitter"></a>
-        </li>
-      </ul>
-      <a href="https://htmlacademy.ru" class="footer__bottom-developer" aria-label="Ссылка на разработчика сайта">
-        <img src="images/icons/htmlacademy.svg" width="26" height="34">
-      </a>
-    </div>
-  </footer>
+      <div class="footer__bottom">
+        <ul class="social-network">
+          <li class="social-network__item">
+            <a href="#" class="social-network__button _facebook" aria-label="Магазин Device в facebook"></a>
+          </li>
+          <li class="social-network__item">
+            <a href="#" class="social-network__button _instagram" aria-label="Магазин Device в instagram"></a>
+          </li>
+          <li class="social-network__item">
+            <a href="#" class="social-network__button _twitter" aria-label="Магазин Device в twitter"></a>
+          </li>
+        </ul>
+        <a href="https://htmlacademy.ru" class="footer__bottom-developer" aria-label="Ссылка на разработчика сайта">
+          <img src="images/icons/htmlacademy.svg" width="26" height="34">
+        </a>
+      </div>
+    </footer>
+  </div>
 
   <div class="popup">
     <button type="button" class="popup__close" type="button" aria-label="Закрыть карту"></button>

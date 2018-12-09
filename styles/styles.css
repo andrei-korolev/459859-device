@@ -38,6 +38,12 @@ body {
   color: #000000;
 }
 
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 0;
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -60,26 +66,150 @@ body {
   background-image: none;
 }
 
+.logotype {
+  font-family: gilroy-extra, sans-serif;
+  font-size: 50px;
+}
+
 .header {
+  padding: 0 60px 40px;
   background-color: rgba(240, 197, 46, 0.5);
 }
 
-.header__search {
-  color: rgba(0, 0, 0, 0.3);
+.header__logotype {
+  position: relative;
+  top: -14px;
+}
+
+.header__line {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.header__line._subnavigation {
+  visibility: hidden;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.header:hover .header__line._subnavigation {
+  visibility: visible;
+}
+
+.header__line + .header__line {
+  margin-top: 23px;
+}
+
+.search {
+  display: flex;
+  width: 440px;
+  margin: 0;
+  color: #000000;
+}
+
+.search__input {
+  flex-grow: 1;
+  padding: 0 0 10px 41px;
+  background: transparent url("../images/icons/search.svg") no-repeat 5px 11px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font: inherit;
+  color: #000000;
+}
+
+.search__button {
+  visibility: hidden;
+}
+
+.search__input:focus {
+  border-bottom-color: #000000;
+  outline: none;
+}
+
+.search__input:focus ~ .search__button {
+  visibility: visible;
+}
+
+.search__input::-webkit-input-placeholder,
+.search__input::-moz-placeholder,
+.search__input:-ms-input-placeholder {
+  /*color: rgba(255, 255, 255, 0.3);*/
+}
+
+.search__input:hover::-webkit-input-placeholder,
+.search__input:hover::-moz-placeholder,
+.search__input:hover:-ms-input-placeholder {
+  /*color: rgba(255, 255, 255, 0.3);*/
+}
+
+.search__input:active::-webkit-input-placeholder,
+.search__input:active::-moz-placeholder,
+.search__input:active:-ms-input-placeholder {
+  /*color: rgba(255, 255, 255, 0.3);*/
+}
+
+.search__button {
+  border: 2px solid #000000;
+  height: 50px;
+  padding: 0 19px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.search__button:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.search__button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .header__navigation {
+  width: 100%;
+  text-transform: uppercase;
   font-family: gilroy-extra, sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 3.6px;
 }
 
+.header__navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.header__navigation-item:first-child {
+  margin-right: auto;
+}
+
+.header__navigation-item + .header__navigation-item {
+  margin-left: 33px;
+}
+
+.header__navigation-item:last-child {
+  margin-left: 103px;
+}
+
+.header__navigation-link._icon-plus {
+  padding-right: 30px;
+  background: url('../images/icons/plus.svg') center right no-repeat;
+}
+
+.header__subnavigation + .header__subnavigation {
+  margin-left: 60px;
+}
+
+.header__subnavigation-item + .header__subnavigation-item {
+  margin-top: 5px;
+}
+
 .footer__bottom-developer:hover,
 .footer__navigation-link:hover,
 .header__navigation-link:hover,
 .user-info__menu-link:hover,
-.logotype:hover {
+.logotype[href]:hover {
   opacity: 0.6;
 }
 
@@ -87,7 +217,7 @@ body {
 .footer__navigation-link:active,
 .header__navigation-link:active,
 .user-info__menu-link:active,
-.logotype:active {
+.logotype[href]:active {
   opacity: 0.3;
 }
 
@@ -131,10 +261,39 @@ body {
   color: #ffffff;
 }
 
-.user-info {
+.user-info__menu {
+  display: flex;
+  align-items: center;
   font-size: 15px;
-  line-height: 30px;
-  letter-spacing: 0.15px;
+  line-height: 38px;
+  letter-spacing: -0.5px;
+}
+
+.user-info__menu-item._margin {
+  margin-right: 177px;
+}
+
+.user-info__menu-item + .user-info__menu-item {
+  margin-left: 40px;
+}
+
+.user-info__menu-link {
+  background: transparent none left center no-repeat;
+}
+
+.user-info__menu-link._user {
+  padding-left: 27px;
+  background-image: url('../images/icons/user.svg');
+}
+
+.user-info__menu-link._compare {
+  padding-left: 24px;
+  background-image: url('../images/icons/compare.svg');
+}
+
+.user-info__menu-link._cart {
+  padding-left: 26px;
+  background-image: url('../images/icons/cart.svg');
 }
 
 .catalog__item-price {
