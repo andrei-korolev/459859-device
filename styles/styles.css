@@ -70,6 +70,7 @@ body {
   font-weight: normal;
   line-height: 23.5px;
   letter-spacing: 3.3px;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -533,6 +534,87 @@ body {
 }
 
 /*sections end*/
+
+/*service-slider start*/
+
+.service-slider {
+  margin-top: 80px;
+  background-image: linear-gradient(#e5e5e5, #e5e5e5);
+  background-size: 100%;
+  background-position-y: 100px;
+  background-repeat: no-repeat;
+}
+
+.service-slider__column {
+  padding: 80px 0 72px;
+}
+
+.service-slider__column:first-child {
+  flex-shrink: 0;
+  width: 285px;
+  border-right: 7px solid #000000;
+}
+
+.service-slider__column:last-child {
+  flex-grow: 1;
+  padding-left: 117px;
+}
+
+.service-slider__control-item + .service-slider__control-item {
+  margin-top: 24px;
+}
+
+.service-slider__item {
+  display: none;
+  background-position: calc(100% - 66px) 85px;
+  background-repeat: no-repeat;
+}
+
+.service-slider__item._active {
+  display: flex;
+}
+
+.service-slider__item._delivery {
+  background-image: url('../images/service-slider/delivery.svg');
+}
+
+.service-slider__item._warranty {
+  background-image: url('../images/service-slider/warranty.svg');
+}
+
+.service-slider__item._credit {
+  background-image: url('../images/service-slider/credit.svg');
+}
+
+.service-slider__button {
+  width: 160px;
+}
+
+.service-slider__button._active {
+  width: 100%;
+  justify-content: flex-start;
+  padding-left: 20px;
+  background-size: 100%;
+  background-image: none;
+  background-color: #000000;
+  color: #f7e184;
+}
+
+.service-slider__title {
+  margin: 3px 0;
+  font-family: gilroy-extra, sans-serif;
+  font-weight: normal;
+  font-size: 47px;
+  letter-spacing: 1px;
+}
+
+.service-slider__description {
+  width: 425px;
+  margin: 39px 0 0;
+  color: #464646;
+}
+
+/*service-slider end*/
 
 .catalog__item-price {
   font-size: 16px;
