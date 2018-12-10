@@ -5,3 +5,11 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "gilroy-extra";
+  src: url("../fonts/gilroy-extra/gilroy-extra-light.woff2") format('woff2'),
+  url("../fonts/gilroy-extra/gilroy-extra-light.woff2") format('woff');
+  font-weight: 300;
+  font-style: normal;
+}

@@ -37,6 +37,17 @@ body {
   color: #000000;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .wrapper {
   width: 1200px;
   margin: 0 auto;
@@ -44,15 +55,21 @@ body {
 }
 
 .button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 220px;
   height: 40px;
+  padding: 0 43px;
+  text-transform: uppercase;
   background-image: linear-gradient(#f0c52e, #f0c52e);
   background-size: 100% 8px;
   background-position: center;
   background-repeat: no-repeat;
+  font-family: gilroy-extra, sans-serif;
+  font-size: 18.5px;
+  font-weight: normal;
+  line-height: 23.5px;
+  letter-spacing: 3.3px;
 }
 
 .button:hover {
@@ -67,6 +84,7 @@ body {
 
 .logotype {
   font-family: gilroy-extra, sans-serif;
+  font-weight: normal;
   font-size: 50px;
 }
 
@@ -75,7 +93,12 @@ body {
 }
 
 .header {
-  background-color: rgba(240, 197, 46, 0.5);
+  position: relative;
+  background-color: #f4e2a0;
+}
+
+.header:hover {
+  z-index: 2;
 }
 
 .header__inner {
@@ -182,6 +205,7 @@ body {
   width: 100%;
   text-transform: uppercase;
   font-family: gilroy-extra, sans-serif;
+  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 3.6px;
@@ -237,6 +261,7 @@ body {
 .main__about-title,
 .main__contact-title {
   font-family: gilroy-extra, sans-serif;
+  font-weight: normal;
   font-size: 47.5px;
   line-height: 47.5px;
   letter-spacing: 0.48px;
@@ -245,18 +270,10 @@ body {
 .catalog__item-title,
 .main__about-company-list {
   font-family: gilroy-extra, sans-serif;
+  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.18px;
-}
-
-.main__filters-button,
-.main__about-link,
-.main__contact-link {
-  font-family: gilroy-extra, sans-serif;
-  font-size: 18.5px;
-  line-height: 23.5px;
-  letter-spacing: 3.7px;
 }
 
 .footer__inner {
@@ -285,6 +302,7 @@ body {
 .footer__navigation {
   margin-top: 5px;
   font-family: gilroy-extra, sans-serif;
+  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 3.6px;
@@ -341,6 +359,123 @@ body {
   background-image: url('../images/icons/cart-yellow.svg');
 }
 
+/*product-slider start*/
+
+.product-slider {
+  position: relative;
+  top: -112px;
+  left: 0;
+  z-index: 1;
+  padding: 0 90px;
+}
+
+.product-slider__item {
+  display: none;
+  justify-content: space-between;
+}
+
+.product-slider__item._active {
+  display: flex;
+}
+
+.product-slider__item-column:last-child {
+  padding-top: 78px;
+}
+
+.product-slider__item-column + .product-slider__item-column {
+  margin-left: 125px;
+}
+
+.product-slider__item-title {
+  position: relative;
+  margin: 0 0 18px;
+  font-family: gilroy-extra, sans-serif;
+  font-weight: normal;
+  font-size: 47px;
+  line-height: 57px;
+  letter-spacing: 0.7px;
+}
+
+.product-slider__item-title::before {
+  content: '';
+  position: absolute;
+  top: -41px;
+  left: 0;
+  width: 100px;
+  height: 7px;
+  background-color: #ffffff;
+}
+
+.product-slider__item-title::after {
+  content: '01';
+  position: absolute;
+  top: -31px;
+  right: -42px;
+  font-family: gilroy-extra, sans-serif;
+  font-weight: normal;
+  font-size: 179px;
+  color: #ffffff;
+}
+
+.product-slider__item-description {
+  margin: 0 0 42px;
+  color: #464646;
+}
+
+.product-slider__item-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-slider__control-item + .product-slider__control-item {
+  margin-left: 22px;
+}
+
+
+.product-slider__control-list {
+  display: flex;
+  align-items: center;
+}
+
+.product-slider__control {
+  width: 12px;
+  height: 12px;
+  background: url('../images/icons/slider-controls/off.svg') center / contain no-repeat;
+  cursor: pointer;
+}
+
+.product-slider__control:hover,
+.product-slider__control:focus {
+  opacity: 0.6;
+}
+
+.product-slider__control-item._active .product-slider__control {
+  background-image: url('../images/icons/slider-controls/on.svg');
+}
+
+.product-slider__item-specification-list {
+  display: flex;
+  margin-top: 60px;
+}
+
+.product-slider__item-specification-item + .product-slider__item-specification-item {
+  margin-left: 80px;
+}
+
+.product-slider__item-specification-value {
+  font-family: gilroy-extra, sans-serif;
+  font-size: 36px;
+}
+
+.product-slider__item-specification-label {
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 1;
+}
+
+/*product-slider end*/
+
 .catalog__item-price {
   font-size: 16px;
   line-height: 24px;
@@ -349,6 +484,7 @@ body {
 
 .filter__title {
   font-family: gilroy-extra, sans-serif;
+  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.18px;
