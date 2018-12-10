@@ -366,6 +366,7 @@ body {
   top: -112px;
   left: 0;
   z-index: 1;
+  margin-bottom: -26px;
   padding: 0 90px;
 }
 
@@ -475,6 +476,63 @@ body {
 }
 
 /*product-slider end*/
+
+/*sections start*/
+
+.sections {
+  font-family: gilroy-extra, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+}
+
+.sections__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.sections__link {
+  display: inline-block;
+  width: 160px;
+}
+
+.sections__image {
+  height: 160px;
+  background: #f4e2a0 center no-repeat;
+}
+
+.sections__item._virtual-reality .sections__image {
+  background-image: url('../images/icons/sections/virtual-reality.svg');
+}
+
+.sections__item._monopoda-selfie .sections__image {
+  background-image: url('../images/icons/sections/monopoda-selfie.svg');
+  background-position-y: bottom;
+}
+
+.sections__item._action-cameras .sections__image {
+  background-image: url('../images/icons/sections/action-cameras.svg');
+}
+
+.sections__item._fitness-bracelets .sections__image {
+  background-image: url('../images/icons/sections/fitness-bracelets.svg');
+}
+
+.sections__item._smart-watch .sections__image {
+  background-image: url('../images/icons/sections/smart-watch.svg');
+}
+
+.sections__item._quadcopters .sections__image {
+  background-image: url('../images/icons/sections/quadcopters.svg');
+}
+
+.sections__title {
+  margin-top: 34px;
+}
+
+/*sections end*/
 
 .catalog__item-price {
   font-size: 16px;
