@@ -1,6 +1,12 @@
 @import "fonts.css";
 
-* {
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
   box-sizing: border-box;
 }
 
@@ -258,18 +264,7 @@ body {
   opacity: 0.3;
 }
 
-.main__title,
-.main__about-title,
-.main__contact-title {
-  font-family: gilroy-extra, sans-serif;
-  font-weight: normal;
-  font-size: 47.5px;
-  line-height: 47.5px;
-  letter-spacing: 0.48px;
-}
-
-.catalog__item-title,
-.main__about-company-list {
+.catalog__item-title {
   font-family: gilroy-extra, sans-serif;
   font-weight: normal;
   font-size: 18px;
@@ -504,6 +499,10 @@ body {
   background: #f4e2a0 center no-repeat;
 }
 
+.sections__image:hover {
+  background-color: #f0c52e;
+}
+
 .sections__item._virtual-reality .sections__image {
   background-image: url('../images/icons/sections/virtual-reality.svg');
 }
@@ -539,6 +538,7 @@ body {
 
 .service-slider {
   margin-top: 80px;
+  padding-bottom: 67px;
   background-image: linear-gradient(#e5e5e5, #e5e5e5);
   background-size: 100%;
   background-position-y: 100px;
@@ -615,6 +615,170 @@ body {
 }
 
 /*service-slider end*/
+
+/*brands start*/
+
+.brands {
+  margin-top: 95px;
+}
+
+.brands__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brands__item {
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.brands__link {
+  display: inline-block;
+  width: 260px;
+  height: 100px;
+  filter: grayscale(100%);
+  opacity: 0.2;
+}
+
+.brands__link:hover {
+  opacity: 1;
+  filter: none;
+}
+
+.brands__item._dji .brands__link {
+  background-image: url('../images/brands/dji.jpg');
+}
+
+.brands__item._gadgets .brands__link {
+  background-image: url('../images/brands/gadgets.jpg');
+}
+
+.brands__item._gopro .brands__link {
+  background-image: url('../images/brands/gopro.jpg');
+}
+
+.brands__item._vive .brands__link {
+  background-image: url('../images/brands/vive.jpg');
+}
+
+/*brands end*/
+
+/*main start*/
+
+.main {
+  padding-bottom: 82px;
+}
+
+.main__title {
+  margin: 0 0 43px;
+  font-family: gilroy-extra, sans-serif;
+  font-weight: normal;
+  font-size: 47.5px;
+  line-height: 47.5px;
+  letter-spacing: 0.48px;
+}
+
+.main__title:before {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 7px;
+  margin-bottom: 46px;
+  background-color: #000000;
+}
+
+.main__contact {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.main__contact-inner {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.main__contact-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/*main end*/
+
+/*about start*/
+
+.about {
+  width: 462px;
+}
+
+.about__title {
+}
+
+.about__text {
+  margin: 0;
+}
+
+.about__text + .about__text {
+  margin-top: 30px;
+}
+
+.about__company-list {
+  margin-top: 42px;
+}
+
+.about__company-item {
+  display: flex;
+  align-items: center;
+  font-family: gilroy-extra, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.about__company-item + .about__company-item {
+  margin-top: 9px;
+}
+
+.about__company-item:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  margin-right: 26px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.about__link {
+  width: 260px;
+  margin-top: 58px;
+  padding: 0;
+}
+
+/*about end*/
+
+/*contact start*/
+
+.contact {
+  width: 560px;
+}
+
+.contact__description {
+  margin: 0;
+}
+
+.contact__link {
+  width: 260px;
+  margin-top: 58px;
+  padding: 0;
+}
+
+.contact__map {
+  margin-top: 40px;
+}
+
+/*contact end*/
 
 .catalog__item-price {
   font-size: 16px;
