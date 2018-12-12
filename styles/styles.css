@@ -499,7 +499,7 @@ body {
   background: #f4e2a0 center no-repeat;
 }
 
-.sections__image:hover {
+.sections__link:hover .sections__image {
   background-color: #f0c52e;
 }
 
