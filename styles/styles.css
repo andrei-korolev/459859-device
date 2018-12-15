@@ -474,6 +474,7 @@ body {
 
 .product-slider__item-description {
   margin: 0 0 42px;
+  letter-spacing: 0;
   color: #464646;
 }
 
@@ -491,6 +492,7 @@ body {
 .product-slider__control-list {
   display: flex;
   align-items: center;
+  margin-right: -9px;
 }
 
 .product-slider__control {
