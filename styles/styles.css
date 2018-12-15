@@ -115,6 +115,7 @@ body {
 }
 
 .logotype._yellow {
+  letter-spacing: -0.5px;
   color: #ffc600;
 }
 
@@ -338,8 +339,13 @@ body {
   margin: 0;
 }
 
+.footer__logotype {
+  margin-left: -4px;
+}
+
 .footer__navigation {
   margin-top: 5px;
+  margin-left: -38px;
   font-family: gilroy-extra, sans-serif;
   font-weight: normal;
   font-size: 18px;
@@ -584,6 +590,10 @@ body {
   margin-top: 34px;
 }
 
+.sections__title._no-wrap {
+  white-space: nowrap;
+}
+
 /*sections end*/
 
 /*service-slider start*/
@@ -771,7 +781,7 @@ body {
 .main__contact {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 93px;
 }
 
 .main__contact-inner {
@@ -1299,7 +1309,7 @@ body {
 
 .footer__bottom-developer {
   position: absolute;
-  top: 0;
+  top: -2px;
   right: 0;
   line-height: 1;
 }
@@ -1307,7 +1317,7 @@ body {
 .footer__bottom {
   position: relative;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 64px;
 }
 
 .footer__navigation-item + .footer__navigation-item {
