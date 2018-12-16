@@ -554,38 +554,22 @@ body {
   width: 160px;
 }
 
-.sections__image {
+.sections__inner {
+  display: flex;
   height: 160px;
   background: #f4e2a0 center no-repeat;
 }
 
-.sections__link:hover .sections__image {
+.sections__image {
+  margin: auto;
+}
+
+.sections__link:hover .sections__inner {
   background-color: #f0c52e;
 }
 
-.sections__item._virtual-reality .sections__image {
-  background-image: url('../images/icons/sections/virtual-reality.svg');
-}
-
-.sections__item._monopoda-selfie .sections__image {
-  background-image: url('../images/icons/sections/monopoda-selfie.svg');
-  background-position-y: bottom;
-}
-
-.sections__item._action-cameras .sections__image {
-  background-image: url('../images/icons/sections/action-cameras.svg');
-}
-
-.sections__item._fitness-bracelets .sections__image {
-  background-image: url('../images/icons/sections/fitness-bracelets.svg');
-}
-
-.sections__item._smart-watch .sections__image {
-  background-image: url('../images/icons/sections/smart-watch.svg');
-}
-
-.sections__item._quadcopters .sections__image {
-  background-image: url('../images/icons/sections/quadcopters.svg');
+.sections__link:active .sections__image {
+  opacity: 0.3;
 }
 
 .sections__title {
