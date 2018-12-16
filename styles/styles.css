@@ -889,7 +889,7 @@ body {
   margin-bottom: 24px;
 }
 
-.catalog__item:hover .catalog__item-image {
+.catalog__item-inner:hover .catalog__item-image {
   opacity: 0.7;
 }
 
@@ -912,8 +912,8 @@ body {
   font-size: 13px;
 }
 
-.catalog__item:hover .catalog__item-more,
-.catalog__item:hover .catalog__item-compare {
+.catalog__item-inner:hover .catalog__item-more,
+.catalog__item-inner:hover .catalog__item-compare {
   visibility: visible;
 }
 
@@ -978,11 +978,11 @@ body {
   opacity: 0.6;
 }
 
-.text-field__radio:active ~ .text-field__radio-icon {
+.text-field__radio:active:not(:disabled):not(:checked) ~ .text-field__radio-icon {
   background-image: url('../images/icons/controls/radio/on.svg');
 }
 
-.text-field__checkbox:active ~ .text-field__checkbox-icon {
+.text-field__checkbox:active:not(:disabled) ~ .text-field__checkbox-icon {
   background-image: url('../images/icons/controls/checkbox/on.svg');
 }
 
@@ -994,11 +994,11 @@ body {
   background-image: url('../images/icons/controls/checkbox/on.svg');
 }
 
-.text-field__radio:checked:active ~ .text-field__radio-icon {
+.text-field__radio:checked:active:not(:disabled):not(:checked) ~ .text-field__radio-icon {
   background-image: url('../images/icons/controls/radio/off.svg');
 }
 
-.text-field__checkbox:checked:active ~ .text-field__checkbox-icon {
+.text-field__checkbox:checked:active:not(:disabled) ~ .text-field__checkbox-icon {
   background-image: url('../images/icons/controls/checkbox/off.svg');
 }
 
