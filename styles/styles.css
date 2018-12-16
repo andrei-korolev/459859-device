@@ -1103,12 +1103,15 @@ body {
 
 .filters {
   margin-top: 48px;
+  background:
+    linear-gradient(90deg, #dcdcdc 0%, #dcdcdc 49%, #eeeeee 50%, #eeeeee 100%) no-repeat,
+    linear-gradient(90deg, #eeeeee 0%, #eeeeee 49%, #ffffff 50%, #ffffff 100%) no-repeat;
+  background-size: 100% 70px, 100%;
 }
 
 .filters__header {
   display: flex;
   height: 70px;
-  /*align-items: center;*/
   background-color: #eeeeee;
 }
 
@@ -1152,6 +1155,7 @@ body {
 .filters__body .filters__column._catalog {
   display: block;
   padding-top: 70px;
+  background-color: #ffffff;
 }
 
 /*filters end*/
