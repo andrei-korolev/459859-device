@@ -1385,6 +1385,39 @@ body {
   background-image: url("../images/icons/social-network/twitter.svg");
 }
 
+/*popup start*/
+
 .popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
   display: none;
+  outline: 1px solid green;
+  width: 960px;
+  height: 553px;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 }
+
+.popup__close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  opacity: 0.5;
+  z-index: 1;
+  cursor: pointer;
+  background: #eeeeee url('../images/icons/modal-close.svg') no-repeat;
+}
+
+.popup__close:hover {
+  opacity: 1;
+}
+
+.popup__close:active {
+  opacity: 0.3;
+}
+
+/*popup end*/
