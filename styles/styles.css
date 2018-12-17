@@ -894,6 +894,21 @@ body {
   margin-bottom: 24px;
 }
 
+.catalog__item._new:before {
+  content: 'NEW';
+  position: absolute;
+  top: 30px;
+  right: 26px;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  padding: 12px 11.5px;
+  border-radius: 50%;
+  opacity: 0.4;
+  font-family: gilroy-extra, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .catalog__item-inner:hover .catalog__item-image {
   opacity: 0.7;
 }
