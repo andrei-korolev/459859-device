@@ -1422,6 +1422,10 @@ body {
   box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
 }
 
+.popup._open {
+  display: block;
+}
+
 .popup__content {
   display: flex;
   justify-content: center;
