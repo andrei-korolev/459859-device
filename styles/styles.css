@@ -455,6 +455,26 @@ body {
   display: flex;
 }
 
+.product-slider__item-column:first-child {
+  width: 384px;
+  flex-shrink: 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-slider__item[data-slider='1'] .product-slider__item-column:first-child {
+  background-image: url('../images/product-slider/1.png');
+}
+
+.product-slider__item[data-slider='2'] .product-slider__item-column:first-child {
+  background-image: url('../images/product-slider/2.png');
+}
+
+.product-slider__item[data-slider='3'] .product-slider__item-column:first-child {
+  background-image: url('../images/product-slider/3.png');
+}
+
 .product-slider__item-column:last-child {
   padding-top: 78px;
 }

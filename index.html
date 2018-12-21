@@ -93,10 +93,8 @@
       <div class="product-slider__inner">
         <h2 class="visually-hidden">Слайдер с товарами</h2>
         <ul class="product-slider__list">
-          <li class="product-slider__item _active">
-            <div class="product-slider__item-column">
-              <img src="./images/product-slider/1.png" alt="Делай селфи, как Бен Стиллер!" width="384" height="486" class="product-slider__image">
-            </div>
+          <li class="product-slider__item _active" data-slider='1'>
+            <div class="product-slider__item-column"></div>
             <div class="product-slider__item-column">
               <h3 class="product-slider__item-title">Делай селфи, как&#160;Бен&#160;Стиллер!</h3>
               <p class="product-slider__item-description">
@@ -107,13 +105,13 @@
                 <a href="#" class="button product-slider__item-button">Подробнее</a>
                 <ul class="product-slider__control-list">
                   <li class="product-slider__control-item _active">
-                    <button type="button" class="product-slider__control" aria-label="Показать первый продукт"></button>
+                    <button type="button" class="product-slider__control js-product-control" data-control="1" aria-label="Показать первый продукт"></button>
                   </li>
                   <li class="product-slider__control-item">
-                    <button type="button" class="product-slider__control" aria-label="Показать второй продукт"></button>
+                    <button type="button" class="product-slider__control js-product-control" data-control="2" aria-label="Показать второй продукт"></button>
                   </li>
                   <li class="product-slider__control-item">
-                    <button type="button" class="product-slider__control" aria-label="Показать третий продукт"></button>
+                    <button type="button" class="product-slider__control js-product-control" data-control="3" aria-label="Показать третий продукт"></button>
                   </li>
                 </ul>
               </div>
@@ -133,10 +131,8 @@
               </ul>
             </div>
           </li>
-          <li class="product-slider__item">
-            <div class="product-slider__item-column">
-              <img src="./images/product-slider/2.png" alt="Худеем правильно!" width="345" height="485" class="product-slider__image">
-            </div>
+          <li class="product-slider__item" data-slider='2'>
+            <div class="product-slider__item-column"></div>
             <div class="product-slider__item-column">
               <h3 class="product-slider__item-title">Худеем<br>правильно!</h3>
               <p class="product-slider__item-description">
@@ -146,14 +142,14 @@
               <div class="product-slider__item-controls">
                 <a href="#" class="button product-slider__item-button">Подробнее</a>
                 <ul class="product-slider__control-list">
+                  <li class="product-slider__control-item">
+                    <button type="button" class="product-slider__control js-product-control" data-control="1" aria-label="Показать первый продукт"></button>
+                  </li>
                   <li class="product-slider__control-item _active">
-                    <button type="button" class="product-slider__control" aria-label="Показать первый продукт"></button>
+                    <button type="button" class="product-slider__control js-product-control" data-control="2" aria-label="Показать второй продукт"></button>
                   </li>
                   <li class="product-slider__control-item">
-                    <button type="button" class="product-slider__control" aria-label="Показать второй продукт"></button>
-                  </li>
-                  <li class="product-slider__control-item">
-                    <button type="button" class="product-slider__control" aria-label="Показать третий продукт"></button>
+                    <button type="button" class="product-slider__control js-product-control" data-control="3" aria-label="Показать третий продукт"></button>
                   </li>
                 </ul>
               </div>
@@ -165,10 +161,8 @@
               </ul>
             </div>
           </li>
-          <li class="product-slider__item">
-            <div class="product-slider__item-column">
-              <img src="./images/product-slider/3.png" alt="Порхает как бабочка, жалит как пчела!" width="526" height="334" class="product-slider__image">
-            </div>
+          <li class="product-slider__item" data-slider='3'>
+            <div class="product-slider__item-column"></div>
             <div class="product-slider__item-column">
               <h3 class="product-slider__item-title">Порхает как бабочка,<br>жалит как пчела!</h3>
               <p class="product-slider__item-description">
@@ -178,14 +172,14 @@
               <div class="product-slider__item-controls">
                 <a href="#" class="button product-slider__item-button">Подробнее</a>
                 <ul class="product-slider__control-list">
+                  <li class="product-slider__control-item">
+                    <button type="button" class="product-slider__control js-product-control" data-control="1" aria-label="Показать первый продукт"></button>
+                  </li>
+                  <li class="product-slider__control-item">
+                    <button type="button" class="product-slider__control js-product-control" data-control="2" aria-label="Показать второй продукт"></button>
+                  </li>
                   <li class="product-slider__control-item _active">
-                    <button type="button" class="product-slider__control" aria-label="Показать первый продукт"></button>
-                  </li>
-                  <li class="product-slider__control-item">
-                    <button type="button" class="product-slider__control" aria-label="Показать второй продукт"></button>
-                  </li>
-                  <li class="product-slider__control-item">
-                    <button type="button" class="product-slider__control" aria-label="Показать третий продукт"></button>
+                    <button type="button" class="product-slider__control js-product-control" data-control="3" aria-label="Показать третий продукт"></button>
                   </li>
                 </ul>
               </div>
@@ -261,17 +255,17 @@
       <div class="service-slider__inner wrapper">
         <h2 class="visually-hidden">Слайдер с услегами</h2>
         <ul class="service-slider__list">
-          <li class="service-slider__item _delivery _active">
+          <li class="service-slider__item _delivery _active" data-slider='1'>
             <div class="service-slider__column">
               <ul class="service-slider__control-list">
                 <li class="service-slider__control-item">
-                  <button type="button" class="button service-slider__button _active">Доставка</button>
+                  <button type="button" class="button service-slider__button _active js-service-control" data-control="1">Доставка</button>
                 </li>
                 <li class="service-slider__control-item">
-                  <button type="button" class="button service-slider__button">Гарантия</button>
+                  <button type="button" class="button service-slider__button js-service-control" data-control="2">Гарантия</button>
                 </li>
                 <li class="service-slider__control-item">
-                  <button type="button" class="button service-slider__button">Кредит</button>
+                  <button type="button" class="button service-slider__button js-service-control" data-control="3">Кредит</button>
                 </li>
               </ul>
             </div>
@@ -280,17 +274,17 @@
               <p class="service-slider__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
           </li>
-          <li class="service-slider__item _warranty">
+          <li class="service-slider__item _warranty" data-slider='2'>
             <div class="service-slider__column">
               <ul class="service-slider__control-list">
                 <li class="service-slider__control-item">
-                  <button type="button" class="button service-slider__button">Доставка</button>
+                  <button type="button" class="button service-slider__button js-service-control" data-control="1">Доставка</button>
                 </li>
                 <li class="service-slider__control-item">
-                  <button type="button" class="button service-slider__button _active">Гарантия</button>
+                  <button type="button" class="button service-slider__button _active js-service-control" data-control="2">Гарантия</button>
                 </li>
                 <li class="service-slider__control-item">
-                  <button type="button" class="button service-slider__button">Кредит</button>
+                  <button type="button" class="button service-slider__button js-service-control" data-control="3">Кредит</button>
                 </li>
               </ul>
             </div>
@@ -299,17 +293,17 @@
               <p class="service-slider__description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
             </div>
           </li>
-          <li class="service-slider__item _credit">
+          <li class="service-slider__item _credit" data-slider='3'>
             <div class="service-slider__column">
               <ul class="service-slider__control-list">
                 <li class="service-slider__control-item">
-                  <button type="button" class="button service-slider__button">Доставка</button>
+                  <button type="button" class="button service-slider__button js-service-control" data-control="1">Доставка</button>
                 </li>
                 <li class="service-slider__control-item">
-                  <button type="button" class="button service-slider__button">Гарантия</button>
+                  <button type="button" class="button service-slider__button js-service-control" data-control="2">Гарантия</button>
                 </li>
                 <li class="service-slider__control-item">
-                  <button type="button" class="button service-slider__button _active">Кредит</button>
+                  <button type="button" class="button service-slider__button _active js-service-control" data-control="3">Кредит</button>
                 </li>
               </ul>
             </div>
