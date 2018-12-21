@@ -105,7 +105,7 @@
       return;
     }
 
-    controlList.forEach((control) => {
+    controlList.forEach(function (control) {
       control.classList.add('_error');
     });
 
