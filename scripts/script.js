@@ -81,3 +81,36 @@
     activeSlider = newActiveSlider;
   });
 })();
+
+(function () {
+  var feedbackButton = document.querySelector('.feedback-button');
+  var map = document.querySelector('.contact__map');
+
+  feedbackButton.addEventListener('click', function (event) {
+    event.preventDefault();
+  });
+
+  map.addEventListener('click', function (event) {
+    event.preventDefault();
+  });
+})();
+
+(function () {
+  var formFeedback = document.querySelector('.form-feedback');
+
+  formFeedback.addEventListener('submit', function (event) {
+    var controlList = document.querySelectorAll('.form-feedback__input:invalid, .form-feedback__textarea:invalid');
+
+    if (!controlList.length) {
+      return;
+    }
+
+    controlList.forEach((control) => {
+      control.classList.add('_error');
+    });
+
+    console.log('submit');
+
+    event.preventDefault();
+  })
+})();
