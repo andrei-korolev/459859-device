@@ -10,11 +10,6 @@ html {
   box-sizing: border-box;
 }
 
-/*button,*/
-/*input {*/
-  /*font: inherit;*/
-/*}*/
-
 button {
   border: none;
   padding: 0;
@@ -41,7 +36,7 @@ ol {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
@@ -89,7 +84,7 @@ body {
   background-size: 100% 8px;
   background-position: center;
   background-repeat: no-repeat;
-  font-family: gilroy-extra, sans-serif;
+  font-family: gilroy-extra, Arial, sans-serif;
   font-size: 18.5px;
   font-weight: normal;
   line-height: 23.5px;
@@ -109,7 +104,7 @@ body {
 }
 
 .logotype {
-  font-family: gilroy-extra, sans-serif;
+  font-family: gilroy-extra, Arial,  sans-serif;
   font-weight: normal;
   font-size: 50px;
 }
@@ -164,7 +159,7 @@ body {
 .header__navigation {
   width: 100%;
   text-transform: uppercase;
-  font-family: gilroy-extra, sans-serif;
+  font-family: gilroy-extra, Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
@@ -207,7 +202,7 @@ body {
   text-transform: none;
   background-color: #f4e2a0;
   z-index: 2;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
@@ -328,7 +323,7 @@ body {
 }
 
 .catalog__item-title {
-  font-family: gilroy-extra, sans-serif;
+  font-family: gilroy-extra, Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
@@ -365,7 +360,7 @@ body {
 .footer__navigation {
   margin-top: 5px;
   margin-left: -38px;
-  font-family: gilroy-extra, sans-serif;
+  font-family: gilroy-extra, Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
@@ -486,7 +481,7 @@ body {
 .product-slider__item-title {
   position: relative;
   margin: 0 0 18px;
-  font-family: gilroy-extra, sans-serif;
+  font-family: gilroy-extra, Arial, sans-serif;
   font-weight: normal;
   font-size: 47px;
   line-height: 57px;
@@ -508,7 +503,7 @@ body {
   position: absolute;
   top: -31px;
   right: -42px;
-  font-family: gilroy-extra, sans-serif;
+  font-family: gilroy-extra, Arial, sans-serif;
   font-weight: normal;
   font-size: 179px;
   color: #ffffff;
@@ -563,7 +558,7 @@ body {
 }
 
 .product-slider__item-specification-value {
-  font-family: gilroy-extra, sans-serif;
+  font-family: gilroy-extra, Arial, sans-serif;
   font-size: 36px;
 }
 
@@ -578,7 +573,7 @@ body {
 /*sections start*/
 
 .sections {
-  font-family: gilroy-extra, sans-serif;
+  font-family: gilroy-extra, Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
@@ -697,7 +692,7 @@ body {
 
 .service-slider__title {
   margin: 3px 0;
-  font-family: gilroy-extra, sans-serif;
+  font-family: gilroy-extra, Arial, sans-serif;
   font-weight: normal;
   font-size: 47px;
   letter-spacing: 1px;
@@ -795,7 +790,7 @@ body {
 
 .main__title {
   margin: 0 0 43px;
-  font-family: gilroy-extra, sans-serif;
+  font-family: gilroy-extra, Arial, sans-serif;
   font-weight: normal;
   font-size: 47.5px;
   line-height: 47.5px;
@@ -854,7 +849,7 @@ body {
 .about__company-item {
   display: flex;
   align-items: center;
-  font-family: gilroy-extra, sans-serif;
+  font-family: gilroy-extra, Arial, sans-serif;
   font-weight: normal;
   font-size: 16px;
 }
@@ -923,7 +918,7 @@ body {
   padding: 12px 11.5px;
   border-radius: 50%;
   opacity: 0.4;
-  font-family: gilroy-extra, sans-serif;
+  font-family: gilroy-extra, Arial, sans-serif;
   font-weight: normal;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.3);
@@ -971,7 +966,7 @@ body {
 }
 
 .filter__title {
-  font-family: gilroy-extra, sans-serif;
+  font-family: gilroy-extra, Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
@@ -1058,7 +1053,7 @@ body {
 
 .form-slider {
   margin-top: 35px;
-  font-family: gilroy-extra, sans-serif;
+  font-family: gilroy-extra, Arial, sans-serif;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.2);
 }
@@ -1167,7 +1162,7 @@ body {
 
 .filters__header-title {
   margin: 0;
-  font-family: gilroy-extra, sans-serif;
+  font-family: gilroy-extra, Arial, sans-serif;
   font-weight: normal;
   font-size: 16px;
   letter-spacing: 4px;
@@ -1220,7 +1215,7 @@ body {
   margin-top: -9px;
   margin-bottom: 75px;
   background-color: #eeeeee;
-  font-family: gilroy-extra, sans-serif;
+  font-family: gilroy-extra, Arial, sans-serif;
   font-weight: normal;
   font-size: 16px;
 }
@@ -1479,7 +1474,7 @@ body {
 
 .form-feedback {
   width: 760px;
-  font-family: gilroy-extra, sans-serif;
+  font-family: gilroy-extra, Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
 }
@@ -1524,7 +1519,7 @@ body {
   border: 3px solid #eeeeee;
   padding: 0 20px;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   background-color: #eeeeee;
   opacity: 0.5;
 }
