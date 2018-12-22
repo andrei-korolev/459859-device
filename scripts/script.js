@@ -19,7 +19,7 @@
   document.addEventListener('click', function(event) {
     var target = event.target;
 
-    if (target.className !== classNameCloseButton) {
+    if (!target.classList.contains(classNameCloseButton)) {
       return;
     }
 
