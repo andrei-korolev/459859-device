@@ -231,11 +231,11 @@ body {
   margin-top: 6px;
 }
 
-.sub-menu__link:hover {
+.sub-menu__link[href]:hover {
   opacity: 0.6;
 }
 
-.sub-menu__link:active {
+.sub-menu__link[href]:active {
   opacity: 0.3;
 }
 
@@ -243,9 +243,12 @@ body {
 
 .search {
   display: flex;
-  width: 440px;
-  margin: 0;
   color: #000000;
+}
+
+.search__label {
+  display: flex;
+  width: 440px;
 }
 
 .search__input {
@@ -267,6 +270,8 @@ body {
   outline: none;
 }
 
+.search__button:focus,
+.search__button:active,
 .search__input:focus ~ .search__button {
   visibility: visible;
 }
@@ -290,7 +295,7 @@ body {
 
 .footer__bottom-developer:hover,
 .footer__navigation-link:hover,
-.header__navigation-link:hover,
+.header__navigation-link[href]:hover,
 .user-menu__link[href]:hover,
 .logotype[href]:hover {
   opacity: 0.6;
@@ -298,7 +303,7 @@ body {
 
 .footer__bottom-developer:active,
 .footer__navigation-link:active,
-.header__navigation-link:active,
+.header__navigation-link[href]:active,
 .user-menu__link[href]:active,
 .logotype[href]:active {
   opacity: 0.3;
@@ -433,31 +438,20 @@ body {
 }
 
 .product-slider__item-column:first-child {
-  width: 384px;
+  display: flex;
   flex-shrink: 0;
+  width: 526px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.product-slider__item[data-slider='1'] .product-slider__item-column:first-child {
-  background-image: url('../images/product-slider/1.png');
-}
-
-.product-slider__item[data-slider='2'] .product-slider__item-column:first-child {
-  background-image: url('../images/product-slider/2.png');
-}
-
-.product-slider__item[data-slider='3'] .product-slider__item-column:first-child {
-  background-image: url('../images/product-slider/3.png');
 }
 
 .product-slider__item-column:last-child {
   padding-top: 78px;
 }
 
-.product-slider__item-column + .product-slider__item-column {
-  margin-left: 125px;
+.product-slider__item-image {
+  margin: auto;
 }
 
 .product-slider__item-title {
@@ -1150,7 +1144,7 @@ body {
   font-family: gilroy-extra, Arial, sans-serif;
   font-weight: normal;
   font-size: 16px;
-  letter-spacing: 4px;
+  letter-spacing: 3.2px;
 }
 
 .filters__header .filters__column:first-child {

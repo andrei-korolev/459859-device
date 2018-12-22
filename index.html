@@ -7,7 +7,7 @@
   <title>Интернет магазин Девайс</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/styles.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header class="header">
@@ -18,10 +18,12 @@
         </div>
         <div class="header__line">
           <div class="header__search">
-            <p class="search">
-              <input type="text" name="search" placeholder="Поиск по сайту" class="search__input" aria-label="Поиск по сайту">
-              <button type="button" class="search__button">Найти</button>
-            </p>
+            <form method="post" action="https://echo.htmlacademy.ru" class="search">
+              <label class="search__label">
+                <input type="text" required name="search" placeholder="Поиск по сайту" class="search__input" aria-label="Поиск по сайту">
+                <button class="search__button">Найти</button>
+              </label>
+            </form>
           </div>
           <div class="header__user-menu">
             <ul class="user-menu">
@@ -41,7 +43,7 @@
           <nav class="header__navigation">
             <ul class="header__navigation-list">
               <li class="header__navigation-item">
-                <a href="catalog.html" class="header__navigation-link _icon-plus">Каталог товаров</a>
+                <a class="header__navigation-link _icon-plus">Каталог товаров</a>
 
                 <div class="sub-menu">
                   <div class="sub-menu__inner wrapper">
@@ -50,7 +52,7 @@
                         <a href="#" class="sub-menu__link">Виртуальная реальность</a>
                       </li>
                       <li class="sub-menu__item">
-                        <a href="#" class="sub-menu__link">Моноподы для селфи</a>
+                        <a href="./catalog.html" class="sub-menu__link">Моноподы для селфи</a>
                       </li>
                       <li class="sub-menu__item">
                         <a href="#" class="sub-menu__link">Экшн-камеры</a>
@@ -94,7 +96,9 @@
         <h2 class="visually-hidden">Слайдер с товарами</h2>
         <ul class="product-slider__list">
           <li class="product-slider__item _active" data-slider='1'>
-            <div class="product-slider__item-column"></div>
+            <div class="product-slider__item-column">
+              <img src="./images/product-slider/1.png" alt="Селфи-палка" width="384" height="486" class="product-slider__item-image">
+            </div>
             <div class="product-slider__item-column">
               <h3 class="product-slider__item-title">Делай селфи, как&#160;Бен&#160;Стиллер!</h3>
               <p class="product-slider__item-description">
@@ -132,7 +136,9 @@
             </div>
           </li>
           <li class="product-slider__item" data-slider='2'>
-            <div class="product-slider__item-column"></div>
+            <div class="product-slider__item-column">
+              <img src="./images/product-slider/2.png" alt="Часы" width="345" height="485" class="product-slider__item-image">
+            </div>
             <div class="product-slider__item-column">
               <h3 class="product-slider__item-title">Худеем<br>правильно!</h3>
               <p class="product-slider__item-description">
@@ -162,9 +168,11 @@
             </div>
           </li>
           <li class="product-slider__item" data-slider='3'>
-            <div class="product-slider__item-column"></div>
             <div class="product-slider__item-column">
-              <h3 class="product-slider__item-title">Порхает как бабочка,<br>жалит как пчела!</h3>
+              <img src="./images/product-slider/3.png" alt="Квадрокоптер" width="526" height="334" class="product-slider__item-image">
+            </div>
+            <div class="product-slider__item-column">
+              <h3 class="product-slider__item-title">Порхает как бабочка, жалит&#160;как&#160;пчела!</h3>
               <p class="product-slider__item-description">
                 Этот обычный, на первый взгляд, квадрокоптер оснащен
                 мощным лазером, замаскированным под стандартную камеру.
