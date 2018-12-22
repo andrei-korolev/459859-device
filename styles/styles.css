@@ -259,12 +259,8 @@ body {
   color: #000000;
 }
 
-.search__label {
-  display: flex;
-  width: 440px;
-}
-
 .search__input {
+  width: 440px;
   flex-grow: 1;
   padding: 0 0 10px 41px;
   background: transparent url("../images/icons/search.svg") no-repeat 5px 11px;
@@ -278,7 +274,7 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.search__label:hover .search__input::placeholder {
+.search__input:hover::placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 
