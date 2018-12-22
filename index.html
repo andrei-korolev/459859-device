@@ -14,61 +14,61 @@
     <div class="wrapper">
       <div class="header__inner">
         <div class="header__logotype">
-          <a class="logotype" aria-label="Ссылка на главную страницу магазина DEVICE">DEVICE</a>
+          <a class="base-link logotype" aria-label="Ссылка на главную страницу магазина DEVICE">DEVICE</a>
         </div>
         <div class="header__line">
           <div class="header__search">
             <form method="post" action="https://echo.htmlacademy.ru" class="search">
               <label class="search__label">
                 <input type="text" required name="search" placeholder="Поиск по сайту" class="search__input" aria-label="Поиск по сайту">
-                <button class="search__button">Найти</button>
+                <button class="base-button search__button" aria-label="Найти на сайте">Найти</button>
               </label>
             </form>
           </div>
           <div class="header__user-menu">
-            <ul class="user-menu">
+            <ul class="list user-menu">
               <li class="user-menu__item _width">
-                <a href="#" class="user-menu__link _user">Войти</a>
+                <a href="#" class="base-link user-menu__link _user">Войти</a>
               </li>
               <li class="user-menu__item">
-                <a href="#" class="user-menu__link _compare">Сравнить</a>
+                <a href="#" class="base-link user-menu__link _compare">Сравнить</a>
               </li>
               <li class="user-menu__item">
-                <a href="#" class="user-menu__link _cart">Корзина</a>
+                <a href="#" class="base-link user-menu__link _cart">Корзина</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="header__line">
           <nav class="header__navigation">
-            <ul class="header__navigation-list">
+            <ul class="list header__navigation-list">
               <li class="header__navigation-item">
-                <a class="header__navigation-link _icon-plus">Каталог товаров</a>
+                <a class="base-link header__navigation-link _icon-plus">Каталог товаров</a>
 
                 <div class="sub-menu">
                   <div class="sub-menu__inner wrapper">
-                    <ul class="sub-menu__list">
+                    <ul class="list sub-menu__list">
                       <li class="sub-menu__item">
-                        <a href="#" class="sub-menu__link">Виртуальная реальность</a>
+                        <a href="#" class="base-link sub-menu__link">Виртуальная реальность</a>
                       </li>
                       <li class="sub-menu__item">
-                        <a href="./catalog.html" class="sub-menu__link">Моноподы для селфи</a>
+                        <a href="./catalog.html" class="base-link sub-menu__link">Моноподы для селфи</a>
                       </li>
                       <li class="sub-menu__item">
-                        <a href="#" class="sub-menu__link">Экшн-камеры</a>
-                      </li>
-                    </ul>
-                    <ul class="sub-menu__list">
-                      <li class="sub-menu__item">
-                        <a href="#" class="sub-menu__link">Фитнес-браслеты</a>
-                      </li>
-                      <li class="sub-menu__item">
-                        <a href="#" class="sub-menu__link">Умные часы</a>
+                        <a href="#" class="base-link sub-menu__link">Экшн-камеры</a>
                       </li>
                     </ul>
-                    <ul class="sub-menu__list">
+                    <ul class="list sub-menu__list">
                       <li class="sub-menu__item">
-                        <a href="#" class="sub-menu__link">Квадрокоптеры</a>
+                        <a href="#" class="base-link sub-menu__link">Фитнес-браслеты</a>
+                      </li>
+                      <li class="sub-menu__item">
+                        <a href="#" class="base-link sub-menu__link">Умные часы</a>
+                      </li>
+                    </ul>
+                    <ul class="list sub-menu__list">
+                      <li class="sub-menu__item">
+                        <a href="#" class="base-link sub-menu__link">Квадрокоптеры</a>
                       </li>
                     </ul>
                   </div>
@@ -76,13 +76,13 @@
                 </div>
               </li>
               <li class="header__navigation-item">
-                <a href="#" class="header__navigation-link">Доставка</a>
+                <a href="#" class="base-link header__navigation-link">Доставка</a>
               </li>
               <li class="header__navigation-item">
-                <a href="#" class="header__navigation-link">Гарантия</a>
+                <a href="#" class="base-link header__navigation-link">Гарантия</a>
               </li>
               <li class="header__navigation-item">
-                <a href="#" class="header__navigation-link">Контакты</a>
+                <a href="#" class="base-link header__navigation-link">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -94,8 +94,8 @@
     <section class="product-slider wrapper">
       <div class="product-slider__inner">
         <h2 class="visually-hidden">Слайдер с товарами</h2>
-        <ul class="product-slider__list">
-          <li class="product-slider__item _active" data-slider='1'>
+        <ul class="list product-slider__list">
+          <li class="product-slider__item _active" data-slider="1">
             <div class="product-slider__item-column">
               <img src="./images/product-slider/1.png" alt="Селфи-палка" width="384" height="486" class="product-slider__item-image">
             </div>
@@ -106,20 +106,20 @@
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
               </p>
               <div class="product-slider__item-controls">
-                <a href="#" class="button product-slider__item-button">Подробнее</a>
-                <ul class="product-slider__control-list">
+                <a href="#" class="base-link button product-slider__item-button">Подробнее</a>
+                <ul class="list product-slider__control-list">
                   <li class="product-slider__control-item _active">
-                    <button type="button" class="product-slider__control js-product-control" data-control="1" aria-label="Показать первый продукт"></button>
+                    <button type="button" class="base-button product-slider__control js-product-control" data-control="1" aria-label="Показать первый продукт"></button>
                   </li>
                   <li class="product-slider__control-item">
-                    <button type="button" class="product-slider__control js-product-control" data-control="2" aria-label="Показать второй продукт"></button>
+                    <button type="button" class="base-button product-slider__control js-product-control" data-control="2" aria-label="Показать второй продукт"></button>
                   </li>
                   <li class="product-slider__control-item">
-                    <button type="button" class="product-slider__control js-product-control" data-control="3" aria-label="Показать третий продукт"></button>
+                    <button type="button" class="base-button product-slider__control js-product-control" data-control="3" aria-label="Показать третий продукт"></button>
                   </li>
                 </ul>
               </div>
-              <ul class="product-slider__item-specification-list">
+              <ul class="list product-slider__item-specification-list">
                 <li class="product-slider__item-specification-item">
                   <div class="product-slider__item-specification-value">8,5 м</div>
                   <div class="product-slider__item-specification-label">Длина палки</div>
@@ -135,7 +135,7 @@
               </ul>
             </div>
           </li>
-          <li class="product-slider__item" data-slider='2'>
+          <li class="product-slider__item" data-slider="2">
             <div class="product-slider__item-column">
               <img src="./images/product-slider/2.png" alt="Часы" width="345" height="485" class="product-slider__item-image">
             </div>
@@ -146,20 +146,20 @@
                 не пропускать занятия и соблюдать диету.
               </p>
               <div class="product-slider__item-controls">
-                <a href="#" class="button product-slider__item-button">Подробнее</a>
-                <ul class="product-slider__control-list">
+                <a href="#" class="base-link button product-slider__item-button">Подробнее</a>
+                <ul class="list product-slider__control-list">
                   <li class="product-slider__control-item">
-                    <button type="button" class="product-slider__control js-product-control" data-control="1" aria-label="Показать первый продукт"></button>
+                    <button type="button" class="base-button product-slider__control js-product-control" data-control="1" aria-label="Показать первый продукт"></button>
                   </li>
                   <li class="product-slider__control-item _active">
-                    <button type="button" class="product-slider__control js-product-control" data-control="2" aria-label="Показать второй продукт"></button>
+                    <button type="button" class="base-button product-slider__control js-product-control" data-control="2" aria-label="Показать второй продукт"></button>
                   </li>
                   <li class="product-slider__control-item">
-                    <button type="button" class="product-slider__control js-product-control" data-control="3" aria-label="Показать третий продукт"></button>
+                    <button type="button" class="base-button product-slider__control js-product-control" data-control="3" aria-label="Показать третий продукт"></button>
                   </li>
                 </ul>
               </div>
-              <ul class="product-slider__item-specification-list">
+              <ul class="list product-slider__item-specification-list">
                 <li class="product-slider__item-specification-item">
                   <div class="product-slider__item-specification-value">48 часов</div>
                   <div class="product-slider__item-specification-label">Без подзарядки</div>
@@ -167,7 +167,7 @@
               </ul>
             </div>
           </li>
-          <li class="product-slider__item" data-slider='3'>
+          <li class="product-slider__item" data-slider="3">
             <div class="product-slider__item-column">
               <img src="./images/product-slider/3.png" alt="Квадрокоптер" width="526" height="334" class="product-slider__item-image">
             </div>
@@ -178,20 +178,20 @@
                 мощным лазером, замаскированным под стандартную камеру.
               </p>
               <div class="product-slider__item-controls">
-                <a href="#" class="button product-slider__item-button">Подробнее</a>
-                <ul class="product-slider__control-list">
+                <a href="#" class="base-link button product-slider__item-button">Подробнее</a>
+                <ul class="list product-slider__control-list">
                   <li class="product-slider__control-item">
-                    <button type="button" class="product-slider__control js-product-control" data-control="1" aria-label="Показать первый продукт"></button>
+                    <button type="button" class="base-button product-slider__control js-product-control" data-control="1" aria-label="Показать первый продукт"></button>
                   </li>
                   <li class="product-slider__control-item">
-                    <button type="button" class="product-slider__control js-product-control" data-control="2" aria-label="Показать второй продукт"></button>
+                    <button type="button" class="base-button product-slider__control js-product-control" data-control="2" aria-label="Показать второй продукт"></button>
                   </li>
                   <li class="product-slider__control-item _active">
-                    <button type="button" class="product-slider__control js-product-control" data-control="3" aria-label="Показать третий продукт"></button>
+                    <button type="button" class="base-button product-slider__control js-product-control" data-control="3" aria-label="Показать третий продукт"></button>
                   </li>
                 </ul>
               </div>
-              <ul class="product-slider__item-specification-list">
+              <ul class="list product-slider__item-specification-list">
                 <li class="product-slider__item-specification-item">
                   <div class="product-slider__item-specification-value">800 м</div>
                   <div class="product-slider__item-specification-label">Дальность полета</div>
@@ -208,9 +208,9 @@
     </section>
     <section class="sections wrapper">
       <h2 class="visually-hidden">Категории товаров</h2>
-      <ul class="sections__list">
+      <ul class="list sections__list">
         <li class="sections__item">
-          <a href="./catalog.html" class="sections__link" aria-label="Виртуальная реальность">
+          <a href="./catalog.html" class="base-link sections__link" aria-label="Виртуальная реальность">
             <div class="sections__inner">
               <img class="sections__image" src="./images/icons/sections/virtual-reality.svg" width="97" height="55" alt="Виртуальная реальность">
             </div>
@@ -218,7 +218,7 @@
           </a>
         </li>
         <li class="sections__item">
-          <a href="./catalog.html" class="sections__link" aria-label="Моноподы для селфи">
+          <a href="./catalog.html" class="base-link sections__link" aria-label="Моноподы для селфи">
             <div class="sections__inner">
               <img class="sections__image _monopoda" src="./images/icons/sections/monopoda-selfie.svg" width="86" height="117" alt="Моноподы для селфи">
             </div>
@@ -226,7 +226,7 @@
           </a>
         </li>
         <li class="sections__item">
-          <a href="./catalog.html" class="sections__link" aria-label="Экшн-камеры">
+          <a href="./catalog.html" class="base-link sections__link" aria-label="Экшн-камеры">
             <div class="sections__inner">
               <img class="sections__image" src="./images/icons/sections/action-cameras.svg" width="71" height="87" alt="Экшн-камеры">
             </div>
@@ -234,7 +234,7 @@
           </a>
         </li>
         <li class="sections__item">
-          <a href="./catalog.html" class="sections__link" aria-label="Фитнес-браслеты">
+          <a href="./catalog.html" class="base-link sections__link" aria-label="Фитнес-браслеты">
             <div class="sections__inner">
               <img class="sections__image" src="./images/icons/sections/fitness-bracelets.svg" width="107" height="65" alt="Фитнес-браслеты">
             </div>
@@ -242,7 +242,7 @@
           </a>
         </li>
         <li class="sections__item">
-          <a href="./catalog.html" class="sections__link" aria-label="Умные часы">
+          <a href="./catalog.html" class="base-link sections__link" aria-label="Умные часы">
             <div class="sections__inner">
               <img class="sections__image" src="./images/icons/sections/smart-watch.svg" width="56" height="98" alt="Умные часы">
             </div>
@@ -250,7 +250,7 @@
           </a>
         </li>
         <li class="sections__item">
-          <a href="./catalog.html" class="sections__link" aria-label="Квадрокоптеры">
+          <a href="./catalog.html" class="base-link sections__link" aria-label="Квадрокоптеры">
             <div class="sections__inner">
               <img class="sections__image" src="./images/icons/sections/quadcopters.svg" width="132" height="69" alt="Квадрокоптеры">
             </div>
@@ -262,18 +262,18 @@
     <section class="service-slider">
       <div class="service-slider__inner wrapper">
         <h2 class="visually-hidden">Слайдер с услегами</h2>
-        <ul class="service-slider__list">
-          <li class="service-slider__item _delivery _active" data-slider='1'>
+        <ul class="list service-slider__list">
+          <li class="service-slider__item _delivery _active" data-slider="1">
             <div class="service-slider__column">
-              <ul class="service-slider__control-list">
+              <ul class="list service-slider__control-list">
                 <li class="service-slider__control-item">
-                  <button type="button" class="button service-slider__button _active js-service-control" data-control="1">Доставка</button>
+                  <button type="button" class="base-button button service-slider__button _active js-service-control" data-control="1">Доставка</button>
                 </li>
                 <li class="service-slider__control-item">
-                  <button type="button" class="button service-slider__button js-service-control" data-control="2">Гарантия</button>
+                  <button type="button" class="base-button button service-slider__button js-service-control" data-control="2">Гарантия</button>
                 </li>
                 <li class="service-slider__control-item">
-                  <button type="button" class="button service-slider__button js-service-control" data-control="3">Кредит</button>
+                  <button type="button" class="base-button button service-slider__button js-service-control" data-control="3">Кредит</button>
                 </li>
               </ul>
             </div>
@@ -282,17 +282,17 @@
               <p class="service-slider__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
           </li>
-          <li class="service-slider__item _warranty" data-slider='2'>
+          <li class="service-slider__item _warranty" data-slider="2">
             <div class="service-slider__column">
-              <ul class="service-slider__control-list">
+              <ul class="list service-slider__control-list">
                 <li class="service-slider__control-item">
-                  <button type="button" class="button service-slider__button js-service-control" data-control="1">Доставка</button>
+                  <button type="button" class="base-button button service-slider__button js-service-control" data-control="1">Доставка</button>
                 </li>
                 <li class="service-slider__control-item">
-                  <button type="button" class="button service-slider__button _active js-service-control" data-control="2">Гарантия</button>
+                  <button type="button" class="base-button button service-slider__button _active js-service-control" data-control="2">Гарантия</button>
                 </li>
                 <li class="service-slider__control-item">
-                  <button type="button" class="button service-slider__button js-service-control" data-control="3">Кредит</button>
+                  <button type="button" class="base-button button service-slider__button js-service-control" data-control="3">Кредит</button>
                 </li>
               </ul>
             </div>
@@ -301,17 +301,17 @@
               <p class="service-slider__description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
             </div>
           </li>
-          <li class="service-slider__item _credit" data-slider='3'>
+          <li class="service-slider__item _credit" data-slider="3">
             <div class="service-slider__column">
-              <ul class="service-slider__control-list">
+              <ul class="list service-slider__control-list">
                 <li class="service-slider__control-item">
-                  <button type="button" class="button service-slider__button js-service-control" data-control="1">Доставка</button>
+                  <button type="button" class="base-button button service-slider__button js-service-control" data-control="1">Доставка</button>
                 </li>
                 <li class="service-slider__control-item">
-                  <button type="button" class="button service-slider__button js-service-control" data-control="2">Гарантия</button>
+                  <button type="button" class="base-button button service-slider__button js-service-control" data-control="2">Гарантия</button>
                 </li>
                 <li class="service-slider__control-item">
-                  <button type="button" class="button service-slider__button _active js-service-control" data-control="3">Кредит</button>
+                  <button type="button" class="base-button button service-slider__button _active js-service-control" data-control="3">Кредит</button>
                 </li>
               </ul>
             </div>
@@ -325,18 +325,18 @@
     </section>
     <section class="brands wrapper">
       <h2 class="visually-hidden">Бренды нашего магазина</h2>
-      <ul class="brands__list">
+      <ul class="list brands__list">
         <li class="brands__item _dji">
-          <a href="#" class="brands__link" aria-label="Товары производителя dji"></a>
+          <a href="#" class="base-link brands__link" aria-label="Товары производителя dji"></a>
         </li>
         <li class="brands__item _gadgets">
-            <a href="#" class="brands__link" aria-label="Товары производителя gadgets"></a>
+            <a href="#" class="base-link brands__link" aria-label="Товары производителя gadgets"></a>
         </li>
         <li class="brands__item _gopro">
-            <a href="#" class="brands__link" aria-label="Товары производителя gopro"></a>
+            <a href="#" class="base-link brands__link" aria-label="Товары производителя gopro"></a>
         </li>
         <li class="brands__item _vive">
-            <a href="#" class="brands__link" aria-label="Товары производителя vive"></a>
+            <a href="#" class="base-link brands__link" aria-label="Товары производителя vive"></a>
         </li>
       </ul>
     </section>
@@ -347,23 +347,23 @@
           <h2 class="about__title main__title _line">О нас</h2>
           <p class="about__text">Огромный выбор гаджетов не оставит равношным гика, который есть в каждом из нас.</p>
           <p class="about__text">Мы можме доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-          <ul class="about__company-list">
+          <ul class="list about__company-list">
             <li class="about__company-item">Деловые Линии</li>
             <li class="about__company-item">Автотрейдинг</li>
             <li class="about__company-item">ЖелДорЭкспедиция</li>
           </ul>
         </div>
-        <a href="#" class="button about__link">Подробнее о нас</a>
+        <a href="#" class="base-link button about__link">Подробнее о нас</a>
       </section>
       <section class="contact main__contact-section">
         <div class="main__contact-inner">
           <h2 class="contact__title main__title _line">Контакты</h2>
           <p class="contact__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособоность покупки. Всякое бывает.</p>
-          <a href="https://maps.yandex.ru" class="contact__map">
+          <a href="https://maps.yandex.ru" class="base-link contact__map">
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8560de5e988ecfa5e578ba568a8f028a01f98e6234e372d357ea9620a3d52958&amp;width=560&amp;height=222&amp;lang=ru_RU&amp;scroll=true"></script>
           </a>
         </div>
-        <a href="#" class="button contact__link feedback-button">Напишите нам</a>
+        <a href="#" class="base-link button contact__link feedback-button">Напишите нам</a>
       </section>
     </div>
   </main>
@@ -372,50 +372,50 @@
       <div class="footer__inner">
         <div class="footer__top">
           <div class="footer__logotype">
-            <a class="logotype _yellow" aria-label="Ссылка на главную страницу магазина DEVICE">DEVICE</a>
+            <a class="base-link logotype _yellow" aria-label="Ссылка на главную страницу магазина DEVICE">DEVICE</a>
           </div>
           <div class="footer__user-menu">
-            <ul class="user-menu _light">
+            <ul class="list user-menu _light">
               <li class="user-menu__item">
-                <a href="#" class="user-menu__link _user _yellow">Войти</a>
+                <a href="#" class="base-link user-menu__link _user _yellow">Войти</a>
               </li>
               <li class="user-menu__item">
-                <a href="#" class="user-menu__link _compare _yellow">Сравнить</a>
+                <a href="#" class="base-link user-menu__link _compare _yellow">Сравнить</a>
               </li>
               <li class="user-menu__item">
-                <a href="#" class="user-menu__link _cart _yellow">Корзина</a>
+                <a href="#" class="base-link user-menu__link _cart _yellow">Корзина</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="footer__main">
           <div class="footer__address">г. Москва, ул. Строителей, 15</div>
-          <ul class="footer__navigation">
+          <ul class="list footer__navigation">
             <li class="footer__navigation-item">
-              <a href="#" class="footer__navigation-link">Доставка</a>
+              <a href="#" class="base-link footer__navigation-link">Доставка</a>
             </li>
             <li class="footer__navigation-item">
-              <a href="#" class="footer__navigation-link">Гарантия</a>
+              <a href="#" class="base-link footer__navigation-link">Гарантия</a>
             </li>
             <li class="footer__navigation-item">
-              <a href="#" class="footer__navigation-link">Контакты</a>
+              <a href="#" class="base-link footer__navigation-link">Контакты</a>
             </li>
           </ul>
           <p class="footer__phone">Тел.: +7 (495) 495-95-95</p>
         </div>
         <div class="footer__bottom">
-          <ul class="social-network">
+          <ul class="list social-network">
             <li class="social-network__item">
-              <a href="#" class="social-network__button _facebook" aria-label="Магазин Device в facebook"></a>
+              <a href="#" class="base-link social-network__button _facebook" aria-label="Магазин Device в facebook"></a>
             </li>
             <li class="social-network__item">
-              <a href="#" class="social-network__button _instagram" aria-label="Магазин Device в instagram"></a>
+              <a href="#" class="base-link social-network__button _instagram" aria-label="Магазин Device в instagram"></a>
             </li>
             <li class="social-network__item">
-              <a href="#" class="social-network__button _twitter" aria-label="Магазин Device в twitter"></a>
+              <a href="#" class="base-link social-network__button _twitter" aria-label="Магазин Device в twitter"></a>
             </li>
           </ul>
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__bottom-developer" aria-label="Ссылка на разработчика сайта">
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="base-link footer__bottom-developer" aria-label="Ссылка на разработчика сайта">
             <img src="images/icons/htmlacademy.svg" width="26" height="34" alt="Логотип разработчика">
           </a>
         </div>
@@ -425,12 +425,12 @@
   </footer>
 
   <div class="popup full-map">
-    <button type="button" class="popup__close" aria-label="Закрыть карту"></button>
+    <button type="button" class="base-button popup__close" aria-label="Закрыть карту"></button>
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8560de5e988ecfa5e578ba568a8f028a01f98e6234e372d357ea9620a3d52958&amp;width=100%25&amp;height=553&amp;lang=ru_RU&amp;scroll=true"></script>
   </div>
 
   <div class="popup feedback">
-    <button type="button" class="popup__close" aria-label="Закрыть форму отправки письма"></button>
+    <button type="button" class="base-button popup__close" aria-label="Закрыть форму отправки письма"></button>
     <div class="popup__content">
       <form method="post" action="https://echo.htmlacademy.ru" class="form-feedback" novalidate>
         <div class="form-feedback__line">
@@ -455,7 +455,7 @@
             </label>
           </div>
         </div>
-        <button class="form-feedback__submit button" aria-label="Отправить письмо">Отправить</button>
+        <button class="base-button form-feedback__submit button" aria-label="Отправить письмо">Отправить</button>
       </form>
     </div>
   </div>
