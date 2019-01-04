@@ -99,6 +99,12 @@
   var formFeedback = document.querySelector('.form-feedback');
   var button = formFeedback.querySelector('.form-feedback__submit');
 
+  document.addEventListener('keydown', function (event) {
+    if (event.keyCode === 27) {
+      document.querySelector('.popup._open').classList.remove('_open');
+    }
+  });
+
   formFeedback.addEventListener('submit', function (event) {
     var controlList = document.querySelectorAll('.form-feedback__input:invalid, .form-feedback__textarea:invalid');
 
