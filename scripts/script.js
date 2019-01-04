@@ -97,6 +97,7 @@
 
 (function () {
   var formFeedback = document.querySelector('.form-feedback');
+  var button = formFeedback.querySelector('.form-feedback__submit');
 
   formFeedback.addEventListener('submit', function (event) {
     var controlList = document.querySelectorAll('.form-feedback__input:invalid, .form-feedback__textarea:invalid');
@@ -108,6 +109,12 @@
     controlList.forEach(function (control) {
       control.classList.add('_error');
     });
+
+    button.classList.add('_error');
+
+    setTimeout(function () {
+      button.classList.remove('_error');
+    }, 500);
 
     console.log('submit');
 

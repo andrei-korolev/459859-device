@@ -49,6 +49,7 @@ html {
 }
 
 body {
+  min-width: 1200px;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -139,7 +140,7 @@ body {
 }
 
 .header._catalog {
-  height: auto;
+  min-height: auto;
 }
 
 .header__inner {
@@ -155,7 +156,7 @@ body {
 .header__user-menu {
   display: flex;
   align-items: flex-start;
-  padding-top: 13px;
+  padding-top: 9px;
 }
 
 .header__line {
@@ -167,7 +168,7 @@ body {
 }
 
 .header__line + .header__line {
-  margin-top: 23px;
+  margin-top: 21px;
 }
 
 .header__navigation {
@@ -263,8 +264,8 @@ body {
 .search__input {
   width: 440px;
   flex-grow: 1;
-  padding: 0 0 10px 41px;
-  background: transparent url("../images/icons/search.svg") no-repeat 5px 11px;
+  padding: 0 0 15px 39px;
+  background: transparent url("../images/icons/search.svg") no-repeat 4px 9px;
   border: none;
   border-bottom: 2px solid transparent;
   font: inherit;
@@ -350,12 +351,18 @@ body {
 
 .footer__phone,
 .footer__address {
+  white-space: nowrap;
   letter-spacing: normal;
   color: #ffffff;
 }
 
+.footer__address {
+  margin-right: 50px;
+}
+
 .footer__phone {
   margin: 0;
+  margin-left: 50px;
 }
 
 .footer__logotype {
@@ -363,6 +370,7 @@ body {
 }
 
 .footer__navigation {
+  flex-wrap: wrap;
   margin-top: 5px;
   margin-left: -38px;
   font-family: gilroy-extra, Arial, sans-serif;
@@ -439,7 +447,7 @@ body {
   top: -112px;
   left: 0;
   z-index: 1;
-  margin-bottom: 5px;
+  margin-bottom: -6px;
 }
 
 .product-slider__inner {
@@ -577,10 +585,10 @@ body {
 
 .sections__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
   width: 1160px;
-  margin-left: 16px;
 }
 
 .sections__link {
@@ -713,6 +721,7 @@ body {
 
 .brands__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -904,6 +913,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 758px;
 }
 
 .catalog__item {
@@ -1093,11 +1103,11 @@ body {
 }
 
 .form-slider__control:first-child {
-  margin-left: -10px;
+  margin-left: -5px;
 }
 
 .form-slider__control:last-child {
-  left: 110px;
+  left: 108px;
 }
 
 .form-slider__price + .form-slider__price {
@@ -1148,7 +1158,7 @@ body {
 /*filters start*/
 
 .filters {
-  margin-top: 48px;
+  margin-top: 45px;
   background:
     linear-gradient(90deg, #dcdcdc 0%, #dcdcdc 49%, #eeeeee 50%, #eeeeee 100%) no-repeat,
     linear-gradient(90deg, #eeeeee 0%, #eeeeee 49%, #ffffff 50%, #ffffff 100%) no-repeat;
@@ -1267,7 +1277,7 @@ body {
 
 .sorting {
   display: flex;
-  margin-left: 45px;
+  margin-left: 55px;
   margin-right: auto;
   font-weight: normal;
 }
@@ -1563,6 +1573,33 @@ body {
 
 .form-feedback__submit {
   margin-top: 43px;
+}
+
+.form-feedback__submit._error {
+  animation-duration: 0.5s;
+  animation-name: submit;
+}
+
+@keyframes submit {
+  0% {
+    transform: rotate(5deg);
+  }
+
+  25% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
 }
 
 /*form-feedback end*/
